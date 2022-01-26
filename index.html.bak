@@ -7,14 +7,6 @@
   <meta name="Author" content="KRISH | SOFTWARE ENGINEER" />
   <meta name="Keywords" content="SVRT, HARDWARE , HOUSE , HOME , HOLD , ARTICALS , ARTICELS , WHOLESALE , RETAIL , MANUFACTURING , AGENT , AP , TELENGANA , KERALA , TAMILNADU , GOA , SOUTH , INDIA" />
   <meta name="Description" content="SVRT HARDWARE&trade; Manufacturing agent of all types of hardware items for your home.Available all types of household articals of your construction need's.Visit our website now." />
-   <meta name="theme-color" content="#ff0000"/>
-    <link rel="manifest" href="manifest.json">
-    <script>
-        //if browser support service worker
-        if('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('sw.js');
-        };
-      </script>
   <title>SVRT HARDWARE</title>
   <link href="" rel="canonical" />
   <!-- Link Swiper's CSS -->
