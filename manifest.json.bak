@@ -1,6 +1,6 @@
 {
-    "short_name": "PWA1",
-    "name": "My PWA 1st Prototype",
+    "short_name": "SVRT Hardware",
+    "name": "SVRT HARDWARE",
     "icons": [
       {
         "src": "/assets/svrt-logo.png",
@@ -14,7 +14,7 @@
       }
     ],
     "start_url": "/index.html",
-    "background_color": "#000000",
+    "background_color": "#ff0000",
     "display": "standalone",
     "theme_color": "#ff0000"
   }

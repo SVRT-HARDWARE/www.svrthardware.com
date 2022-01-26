@@ -1,6 +1,6 @@
 {
-    "short_name": "PWA1",
-    "name": "SVRT HARDWARE™",
+    "short_name": "SVRT Hardware",
+    "name": "SVRT HARDWARE",
     "icons": [
       {
         "src": "/assets/svrt-logo.png",
@@ -10,11 +10,11 @@
       {
         "src": "/assets/svrt-logo.png",
         "type": "image/png",
-        "sizes": "512x512"
+        "sizes": "7209x6252"
       }
     ],
     "start_url": "/index.html",
-    "background_color": "#000000",
+    "background_color": "#ff0000",
     "display": "standalone",
     "theme_color": "#ff0000"
   }
