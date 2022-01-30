@@ -3,10 +3,15 @@
     "name": "SVRT HARDWARE",
     "icons": [
       {
-        "src": "https://dsm01pap002files.storage.live.com/y4mP3wjkQl4na4PMEt6gbf4ZvO9IgW7nGaonptS3XhkuUuCj6T00rOEcgD1rW4LqaZ6qnFFYISq0YqYrZvIXocZK4G7uieplQ_d2p6B04aFXXagtAE_cPrFFhrNHJ5ekFa4eHWnGHM9WYsPa4mBN4e8k1ycMQE7eoW3OkXRJQzrqu_rBagg4XqFth7UJ-oYOi7A?width=1920&height=1920&cropmode=none",
-        "type": "image/jpg",
-        "sizes": "256x256 192x192 128x128 96x96"
+        "src": "/assets/svrt-logo.png",
+        "type": "image/png",
+        "sizes": "192x192"
       },
+      {
+        "src": "/assets/svrt-logo.png",
+        "type": "image/png",
+        "sizes": "7209x6252"
+      }
     ],
     "start_url": "/index.html",
     "background_color": "#ff0000",
