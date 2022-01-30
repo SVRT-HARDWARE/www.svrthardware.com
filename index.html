@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
+	<link rel="manifest" href="manifest.json">
+	<script>
+		//if browser support service worker
+		if('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('sw.js');
+		};
+	</script>
+	<title>SVRT HARDWARE</title>
+	<link href="" rel="canonical" />
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://pxxym1jhrp0iyqbmboz3cw-on.drv.tw/swiperJS/swiper-bundle.min.css"/> 
 	<meta charset="UTF-8">
 	<link rel="icon" type="image/png" href="assets/svrt-logo.png" />
 	<meta name="viewport" content= "width=device-width, initial-scale=1 user-scalable=no" />
@@ -14,18 +25,7 @@
 	<meta property="og:title" content="SVRT HARDWARE.com AP largest wholesale store available all types of home & bath accessories"/>
 	<mata property="og:description" content="Shop no 25 & 26 / 1st floor new klr market / onetown / vijayawada / ap / india"/>
 	<meta property="og:url" content=""/>
-	<link rel="manifest" href="manifest.json">
-	<script>
-		//if browser support service worker
-		if('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('sw.js');
-		};
-	</script>
-	<title>SVRT HARDWARE</title>
-	<link href="" rel="canonical" />
-	<!-- Link Swiper's CSS -->
-	<link rel="stylesheet" href="https://pxxym1jhrp0iyqbmboz3cw-on.drv.tw/swiperJS/swiper-bundle.min.css"/>
-
+	
  </head>
  <body>
 	<nav>
@@ -327,7 +327,7 @@
 	}
 </style>
 
-<style>/**NAVIGATION_BAR__aresponsive **/
+<style>//**NAVIGATION_BAR__aresponsive **//
 *{
   padding: 0;
   margin: 0;
