@@ -28,6 +28,7 @@
 	
  </head>
     <body>
+    <div id="port">
         
         <header>
             <p>SVRT HARDWARE</p>
@@ -130,7 +131,8 @@
                         <img src="assets/images/disp.jpg" />
                 </span>
             </b>
-        
+    </div>   
+            <div id="land" class="landscape"><img src="/landscape.svg"/></div>
 
     </body>
 </html>
@@ -146,6 +148,7 @@
         html{
             -ms-overflow-style:none;
             scrollbar-width:none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         html::-webkit-scrollbar{
             display:none;
@@ -222,6 +225,34 @@
         font-weight: lighter;
         font-size: 4.5vw;
     }
+    .landscape{
+        width:100%;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        vertical-align: middle;
+        align-items: middle;
+        position:relative;
+        background-color: #ffe6b3;
+        overflow: hidden;
+        scroll-behavior: none;
+        overflow-y: hidden;
+    }
+    .landscape img{
+        width: 100%;
+        height: 100%;
+    }
+        /* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
+    @media only screen and (orientation:landscape) {
+        #land { display:block; }
+        #port { display:none; }
+    }
+
+    /* (B) CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
+    @media only screen and (orientation:portrait) {
+        #land { display:none; }
+        #port { display:block; }
+    }
 
     </style>
 
@@ -282,6 +313,27 @@
           prevEl: ".swiper-button-prev",
         },
       });
+    </script>
+    <script>
+        var usrAgent = navigator.userAgent;
+                function detectMobile() 
+        {
+            if(usrAgent.match(/Mobile/i))
+            {
+                return "Mobile";
+            }
+        }
+
+        var isMobile = detectMobile();
+
+        if(isMobile)
+        {
+            window.location = "/index.html";
+        }
+        else
+        {
+            window.location = "/index-com.html";
+        }
     </script>
 
 
