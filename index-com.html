@@ -29,7 +29,7 @@
  </head>
  <body>
 	<nav>
-      <a href="index.html"><label class="logo"><font color="4285F4">s</font><font color="#DB4437">v</font><font color="#F4B400">r</font><font color="#0F9D58">t</font>&nbsp;<font color="#6666cc">hardware</font><font class="ml3">.com&nbsp;&nbsp;</font></label></a>
+      <label class="logo">SVRT HARDWARE<font class="ml3">.com&nbsp;&nbsp;</font></label>
       <ul>
       <li><a class="active" href="">Home</a></li>
 	  <li><a href="contact-us.html">Contact us</a></li>
@@ -211,6 +211,7 @@
 		overflow-x:hidden;
 		background-color:#eaeded;
 		background-attachment:fixed;
+		user-select: none;
 	}
 	html{
 		-ms-overflow-style:none;
@@ -227,7 +228,7 @@
 		background-color:#fff;
 		border-radius:0px;
 		margin-top:-18vw;
-		z-index:9;
+		z-index:1;
 		padding:1.3vw;
 		float:left;
 	}
@@ -266,7 +267,7 @@
 		margin:0.5%;
 		background-color:#fff;
 		border-radius:0px;
-		z-index:9;
+		z-index:1;
 		padding:1.3vw;
 		float:left;
 		}
@@ -335,23 +336,24 @@
   box-sizing: border-box;
 }
 nav{
-  background:#fff;
+  background:#ffe6b3;
   top:0px;
   left:0px;
   height: 5vw;
   width:100%;
   border-bottom:0.25vw solid ;
-  border-image: url('assets/header border.jpg')60;
+  border-bottom:2px solid black;
+  position: sticky;
+  z-index: 9;
 }
 label.logo{
-  color: white;
+  color: black;
   font-size: 4vw;
   float: left;
   text-transform:uppercase;
   padding-left:0.9vw;
   font-weight: bold;
   font-family:calibri;
-  cursor:pointer;
 }
 nav ul{
   float: right;
@@ -376,7 +378,7 @@ a.active,a:hover{
   text-decoration:none;
   font-weight:bold;
   color:#ffffff;
-  background-image: url('assets/header border.jpg');
+  background-color: black;
   background-size:contain;
 }
 a{
