@@ -326,6 +326,10 @@
 
         var isMobile = detectMobile();
 
+        if(isMobile)
+        {
+            window.open = "/index.html";
+        }
         else
         {
             window.location = "/index-com.html";
