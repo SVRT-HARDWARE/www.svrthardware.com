@@ -16,5 +16,21 @@
     "start_url": "/index.html",
     "background_color": "#ffe6b3",
     "orientation":"portrait-primary",
-    "display": "standalone"
+    "display": "standalone",
+    "shortcuts": [
+      {
+        "name": "Home",
+        "short_name": "Home",
+        "description": "View the homepage",
+        "url": "/index.html",
+        "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "Contact Us",
+        "short_name": "Contact Us",
+        "description": "View the Contact Us",
+        "url": "/contact-us.html",
+        "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }]
+      }
+    ]
 }
