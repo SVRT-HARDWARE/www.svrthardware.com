@@ -3,14 +3,14 @@
     "name": "SVRT HARDWARE",
     "icons": [
       {
-        "src": "/assets/svrt-logo.png",
+        "src": "/assets/icon-512.png",
         "type": "image/png",
-        "sizes": "192x192"
+        "sizes": "512x512"
       },
       {
-        "src": "/assets/svrt-logo.png",
+        "src": "/assets/icon-192.png",
         "type": "image/png",
-        "sizes": "7209x6252"
+        "sizes": "192x192"
       }
     ],
     "start_url": "/index.html",
