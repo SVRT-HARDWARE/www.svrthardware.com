@@ -18,7 +18,7 @@
 	<meta name="Author" content="KRISH | SOFTWARE ENGINEER" />
 	<meta name="Keywords" content="SVRT, HARDWARE , HOUSE , HOME , HOLD , ARTICALS , ARTICELS , WHOLESALE , RETAIL , MANUFACTURING , AGENT , AP , TELENGANA , KERALA , TAMILNADU , GOA , SOUTH , INDIA" />
 	<meta name="Description" content="SVRT HARDWARE&trade; Manufacturing agent of all types of hardware items for your home.Available all types of household articals of your construction need's.Visit our website now." />
-	<meta name="theme-color" content="#ffe6b3"/>
+	<meta name="theme-color" content="rgb(255,230,179)"/>
 	<meta property="og:image" content="https://dsm01pap002files.storage.live.com/y4mP3wjkQl4na4PMEt6gbf4ZvO9IgW7nGaonptS3XhkuUuCj6T00rOEcgD1rW4LqaZ6qnFFYISq0YqYrZvIXocZK4G7uieplQ_d2p6B04aFXXagtAE_cPrFFhrNHJ5ekFa4eHWnGHM9WYsPa4mBN4e8k1ycMQE7eoW3OkXRJQzrqu_rBagg4XqFth7UJ-oYOi7A?width=1920&height=1920&cropmode=none"/>
 	<meta property="og:image:width" content="500"/>
 	<meta property="og:image:height" content="500"/>
@@ -31,7 +31,7 @@
     <div id="port">
         
         <header>
-            <p>SVRT HARDWARE</p>
+            <p>&nbsp; <strong>≡</strong> SVRT HARDWARE</p>
         </header>
 
         <!-- Swiper  Banners-->
@@ -42,6 +42,25 @@
         </div>
         </div>
         <br>
+
+        <!--Horizon Small Images Touch Swipe-->
+        <div class="swipes">
+            <img src="/assets/images/disp.jpg"/>
+            <img src="/assets/images/disp.jpg"/>
+            <img src="/assets/images/disp.jpg"/>
+            <img src="/assets/images/disp.jpg"/>
+            <img src="/assets/images/disp.jpg"/>
+            <img src="/assets/images/disp.jpg"/>
+            <img src="/assets/images/disp.jpg"/>
+            <img src="/assets/images/disp.jpg"/>
+            <img src="/assets/images/disp.jpg"/>
+            <img src="/assets/images/disp.jpg"/>
+            <img src="/assets/images/disp.jpg"/>
+            <img src="/assets/images/disp.jpg"/>
+            <img src="/assets/images/disp.jpg"/>
+            <img src="/assets/images/disp.jpg"/>
+            <img src="/assets/images/disp.jpg" style="margin-right: 2vw;"/>
+        </div>
                 
         <!-- Items Start Here-->
             <b class="container">
@@ -148,10 +167,14 @@
         html{
             -ms-overflow-style:none;
             scrollbar-width:none;
+            scroll-behavior: smooth;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         html::-webkit-scrollbar{
             display:none;
+            scroll-behavior: smooth;
+            scrollbar-color: inheritance;
+            scrollbar-width: none;
         }
         
     a{
@@ -160,25 +183,27 @@
     }
     header{
         width:100%;
-        height:10vw;
+        height:14vw;
+        position: fixed;
+        display: flex;
         font-size: 5vw;
         text-align: center;
         color: black;
-        background-color:#ffe6b3;
-        align-content: center;
-        position:fixed;
-        z-index: 9;
+        border-bottom: 0.3vw solid black;
+        background-color:rgb(255,230,179);
+        align-items: center;
+        z-index:9;
         top: 0%;
     }
     header p{
-        margin-top: -1%;
-        padding-top: 2.5vw;
+        margin-top:;
+        padding-top:;
     }
     .container{
         width:95%;
 		height:auto;
 		position:relative;
-		background-color:rgb(0, 174, 255);
+		background-color:rgb(255,230,179);
 		border-radius:0px;
 		padding:1vw;
 		float: left;
@@ -187,6 +212,7 @@
         margin-bottom: 3vw;
         padding-bottom: 2.5vw;
         border-radius: 5vw;
+        z-index: 1;
         display:flex;
         justify-content: center;
         align-items: center;
@@ -208,7 +234,7 @@
         align-items: center;
         align-content: center;
         align-tracks: center;
-        color: white;
+        color: black;
     }
     .see-all {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -224,6 +250,23 @@
         margin-left: 4%;
         font-weight: lighter;
         font-size: 4.5vw;
+    }
+    .swipes{
+        width: 100%;
+        height: auto;
+        display: flex;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-x: scroll;
+        margin-bottom: 3.5%;
+        margin-top: -3%;
+        padding-left: 2.2vw;
+    }
+    .swipes img{
+        width: 17.5%;
+        height: auto;
+        padding: 1.5vw;
+        border-radius: 100px;
     }
     .landscape{
         width:100%;
@@ -261,7 +304,7 @@
       .swiper {
         width: 100%;
         height: auto;
-		margin-top:10.7%;
+		margin-top:14.7%;
 		}
       .swiper-slide {
         width:100%;
