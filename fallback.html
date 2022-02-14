@@ -18,7 +18,7 @@
 	<meta name="Author" content="KRISH | SOFTWARE ENGINEER" />
 	<meta name="Keywords" content="SVRT, HARDWARE , HOUSE , HOME , HOLD , ARTICALS , ARTICELS , WHOLESALE , RETAIL , MANUFACTURING , AGENT , AP , TELENGANA , KERALA , TAMILNADU , GOA , SOUTH , INDIA" />
 	<meta name="Description" content="SVRT HARDWARE&trade; Manufacturing agent of all types of hardware items for your home.Available all types of household articals of your construction need's.Visit our website now." />
-	<meta name="theme-color" content="rgb(255, 0, 0)"/>
+	<meta name="theme-color" content="rgb(255, 255, 255)"/>
 	<meta property="og:image" content="https://dsm01pap002files.storage.live.com/y4mP3wjkQl4na4PMEt6gbf4ZvO9IgW7nGaonptS3XhkuUuCj6T00rOEcgD1rW4LqaZ6qnFFYISq0YqYrZvIXocZK4G7uieplQ_d2p6B04aFXXagtAE_cPrFFhrNHJ5ekFa4eHWnGHM9WYsPa4mBN4e8k1ycMQE7eoW3OkXRJQzrqu_rBagg4XqFth7UJ-oYOi7A?width=1920&height=1920&cropmode=none"/>
 	<meta property="og:image:width" content="500"/>
 	<meta property="og:image:height" content="500"/>
@@ -29,9 +29,12 @@
  </head>
  <body>
 	
-    <h1>Opps !</h1>
-    <h2>Sorry No internet Connection</h2>
-    <button>Retry</button>
+    <center>
+		<img src="/assets/dog.gif" />
+		<h1>Opps !</h1>
+		<h2>No Internet Connection</h2>
+		<button onclick="window.location.reload()">Try Again</button>
+	</center>
 
 
  </body>
@@ -41,25 +44,38 @@
 	body{
 		margin:auto;
 		overflow-x:hidden;
-		background-color:rgb(255, 0, 0);
-        color:whitesmoke;
+		background-color:rgb(255, 255, 255);
+        color:black;
 		background-attachment:fixed;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
 	}
 	html{
 		-ms-overflow-style:none;
 		scrollbar-width:none;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	}
 	html::-webkit-scrollbar{
 		display:none;
 	}
     button{
-        width:30%;
+        width:50%;
         height:auto;
-        padding:5vw;
+        padding:;
         color:whitesmoke;
-        background-color: bisque;
+        background-color: rgb(118, 80, 255);
+		text-align: center;
+		font-size: 3vw;
+		padding: 1.5vw;
         border-radius: 25px;
     }
+	img{
+		width: 55%;
+		height: auto;
+		pointer-events: none;
+	}
 </style>
 
 
