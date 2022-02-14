@@ -30,7 +30,7 @@
  <body>
 	
     <center>
-		<img src="/assets/dog.gif" />
+		<img src="/assets/cute-dog.webp" style="min-width: 50%; max-width: 30%; height: auto;">
 		<h1>Opps !</h1>
 		<h2>No Internet Connection</h2>
 		<button onclick="window.location.reload()">Try Again</button>
@@ -71,12 +71,18 @@
 		padding: 1.5vw;
         border-radius: 25px;
     }
-	img{
-		width: 55%;
-		height: auto;
-		pointer-events: none;
-	}
 </style>
+<script>
+	var images = [
+	'https://www.collinsdictionary.com/images/full/dog_230497594.jpg',
+	'/assets/dog.gif',
+	'/assets/cute-dog.webp'
+	];
+
+	$(images).each(function() {
+	var image = $('<img />').attr('src', this);
+	});
+</script>
 
 
 
