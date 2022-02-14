@@ -27433,7 +27433,7 @@
       min-width:60%;
       max-width: 85%;
       height:auto;
-      padding:;
+      padding:1vw;
       color:whitesmoke;
       background-color: rgb(118, 80, 255);
       text-align: center;
@@ -27441,8 +27441,8 @@
       padding: 1.5vw;
     }
 	svg{
-		min-width: 75%;
-    max-width: 20%;
+		min-width: 95%;
+    max-width: none;
     margin-top: 5vw;
     pointer-events: none;
 		height: auto;
@@ -27459,6 +27459,12 @@
 	$(images).each(function() {
 	var image = $('<img />').attr('src', this);
 	});
+</script>
+<script>
+    if (navigator.onLine) {
+      window.location.reload()
+  } else {
+  }
 </script>
 
 
