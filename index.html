@@ -33,6 +33,7 @@
         <!-- Menu Here -->
         <header>
             <p>&nbsp; <a onclick="openNav()">≡ SVRT HARDWARE </a></p>
+            <button style="margin-left: 40%; position: relative; background-color: inherit;" id="shareBtn">↪</button>
         </header>
         <div id="menu" class="my-menu">
             <p onclick="closeNav()">✕</p>
@@ -462,6 +463,37 @@
       } else {
           window.location.reload();
       }
+    </script>
+    <script>
+        document.querySelector('#shareBtn')
+        .addEventListener('click', event => {
+  
+            // Fallback, Tries to use API only
+            // if navigator.share function is
+            // available
+            if (navigator.share) {
+                navigator.share({
+  
+                    // Title that occurs over
+                    // web share dialog
+                    title: '${title}',
+                    // URL to share
+                    url: '${url}'
+                }).then(() => {
+                    console.log('Thanks for sharing!');
+                }).catch(err => {
+  
+                    // Handle errors, if occured
+                    console.log(
+                    "Error while using Web share API:");
+                    console.log(err);
+                });
+            } else {
+  
+                // Alerts user if API not available 
+                alert("Browser doesn't support this API !");
+            }
+        })
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
