@@ -33,7 +33,7 @@
         <!-- Menu Here -->
         <header>
             <p>&nbsp; <a onclick="openNav()">≡ SVRT HARDWARE </a></p>
-            <button style="margin-left: 40%; position: relative; background-color: inherit;" id="shareBtn">↪</button>
+            <button id="shareBtn"><img src="/assets/share-button.svg" style="width: 6vw; height:auto;"></img></button>
         </header>
         <div id="menu" class="my-menu">
             <p onclick="closeNav()">✕</p>
@@ -264,6 +264,15 @@
         display: flex;
         border-bottom: 0.8vw solid black;
         align-items: center;
+    }
+    #shareBtn{
+        width: 4.5vw;
+        height: auto;
+        border: none;
+        background: none;
+        margin-left: 40%;
+        position: relative;
+        padding-top: 2vw;
     }
     .my-menu::-webkit-scrollbar{
         display: none;
