@@ -1,0 +1,224 @@
+{
+    "ok": true,
+    "data": {
+      "settingsVersion": "2-17-0",
+      "propertyName": "Admin",
+      "branding": {
+        "whitelabeled": true,
+        "text": "🛒 SVRT HARDWARE"
+      },
+      "widget": {
+        "type": "inline",
+        "version": 12,
+        "language": "en",
+        "minimized": {
+          "desktop": {
+            "type": "round"
+          },
+          "mobile": {
+            "type": "rectangle"
+          }
+        },
+        "maximized": {
+          "desktop": {
+            "height": 520,
+            "width": 350
+          }
+        },
+        "bubble": {
+          "type": "image",
+          "config": {
+            "image": {
+              "type": "gallery",
+              "content": "168"
+            },
+            "height": 79,
+            "width": 124,
+            "zIndex": 1,
+            "rotate": 0,
+            "offsetX": 0,
+            "offsetY": 30
+          }
+        },
+        "theme": {
+          "header": {
+            "text": "#000000",
+            "background": "#ffe6b3"
+          },
+          "agent": {
+            "messageText": "#000000",
+            "messageBackground": "#ffe6b3"
+          },
+          "visitor": {
+            "messageText": "#ffe6b3",
+            "messageBackground": "#000000"
+          }
+        },
+        "notification": {
+          "all": {
+            "estimatedWaitTime": true,
+            "sound": true,
+            "agentTyping": true,
+            "visitorTyping": true,
+            "tab": true
+          },
+          "desktop": {
+            "preview": true
+          },
+          "mobile": {
+            "preview": true
+          }
+        },
+        "behavior": {
+          "click": "max"
+        },
+        "visibility": {
+          "all": {
+            "showWhenOffline": false
+          },
+          "desktop": {
+            "position": "br",
+            "show": true
+          },
+          "mobile": {
+            "position": "br",
+            "show": true
+          }
+        },
+        "features": {
+          "emoji": true,
+          "uploads": true,
+          "rating": true,
+          "transcript": false
+        },
+        "components": {
+          "liveChat": true,
+          "kb": true,
+          "webrtc": true
+        },
+        "scheduler": {
+          "enabled": false
+        },
+        "states": {
+          "online": {
+            "header": [
+              {
+                "id": "heading:nUOYuBg1YX",
+                "type": "heading",
+                "content": {
+                  "value": "Hi there 👋",
+                  "alignment": "left"
+                }
+              },
+              {
+                "id": "text:tXPyXnvSPY",
+                "type": "text",
+                "content": {
+                  "value": "Need help? Search our help center for answers or start a conversation:",
+                  "alignment": "left"
+                }
+              }
+            ],
+            "body": [
+              {
+                "id": "kbs:poPMnqyKs1",
+                "type": "kb-search",
+                "content": {
+                  "siteId": "primary",
+                  "linkTarget": "self",
+                  "inputPlaceholder": "Search for answers"
+                }
+              },
+              {
+                "id": "chat:F5U6vhCBx1",
+                "type": "chat",
+                "content": {
+                  "buttonText": "New Conversation",
+                  "inputPlaceholder": "Type here and press enter.."
+                }
+              },
+              {
+                "id": "pc:__Z02PH1RT",
+                "type": "previous-conversations",
+                "content": {}
+              }
+            ],
+            "minimizedText": "Online"
+          },
+          "away": {
+            "header": [
+              {
+                "id": "heading:7aikq5vpBg",
+                "type": "heading",
+                "content": {
+                  "value": "Hi there 👋",
+                  "alignment": "left"
+                }
+              }
+            ],
+            "body": [
+              {
+                "id": "kbs:cvZL_tz1km",
+                "type": "kb-search",
+                "content": {
+                  "siteId": "primary",
+                  "linkTarget": "self",
+                  "inputPlaceholder": "Search for answers"
+                }
+              },
+              {
+                "id": "chat:AF1oa4iViY",
+                "type": "chat",
+                "content": {
+                  "buttonText": "New Conversation",
+                  "inputPlaceholder": "Type here and press enter.."
+                }
+              }
+            ],
+            "minimizedText": "Away"
+          },
+          "offline": {
+            "header": [
+              {
+                "id": "text:SXt1kTNlMG",
+                "type": "text",
+                "content": {
+                  "value": "Please fill out the form below and we will get back to you as soon as possible.",
+                  "alignment": "center"
+                }
+              }
+            ],
+            "body": [
+              {
+                "id": "form:TrvgzehrO-",
+                "type": "form",
+                "content": {
+                  "fields": [
+                    {
+                      "label": "Name",
+                      "required": true,
+                      "type": "text",
+                      "context": "name"
+                    },
+                    {
+                      "label": "Email",
+                      "required": true,
+                      "type": "text",
+                      "context": "email",
+                      "format": "email"
+                    },
+                    {
+                      "label": "Message",
+                      "required": true,
+                      "type": "textarea"
+                    }
+                  ]
+                }
+              }
+            ],
+            "minimizedText": "Send message"
+          }
+        }
+      }
+    }
+  }
