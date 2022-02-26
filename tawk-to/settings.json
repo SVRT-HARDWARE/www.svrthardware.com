@@ -5,8 +5,7 @@
     "propertyName": "Admin",
     "branding": {
       "whitelabeled": true,
-      "text": "🛒 SVRT HARDWARE",
-      "url": "https://coms.svrthardware.com"
+      "text": "🛒 SVRT HARDWARE"
     },
     "widget": {
       "type": "inline",
