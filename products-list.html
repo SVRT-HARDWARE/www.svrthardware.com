@@ -4,7 +4,6 @@
     <link href="" rel="canonical" />
 	<!-- Link Swiper's CSS -->
 	<link rel="stylesheet" href="/swiperJS/swiper-bundle.min.css"/> 
-    <script src="/search-jquery.min.js"></script> 
 	<meta charset="UTF-8">
 	<link rel="icon" type="image/png" href="assets/svrt-logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -27,8 +26,6 @@
 </head>
 <body>
 
-       
-    <div id="search-bar"><input type="text" id="searchInput" placeholder="Search here"></div>
     
     <div id="serch" style="display:hidden;">
 
@@ -242,8 +239,6 @@
             </div>
         </div>
 
-    </div>
-
     
 
 </body>
@@ -373,29 +368,3 @@
         }
     }
 </style>
-
-<script>
-    $("#searchInput").on('keyup', function() {
-    var searchValue = $(this).val();
-    searchAndFilter(searchValue)
-  });
-
-  function searchAndFilter(searchTerm) {
-    if (searchTerm == '') {
-      $("#serch .container").hide()
-    } else {
-      $("#serch .container").each(function() {
-        var currentText = $(this).text();
-        currentText = currentText.toLowerCase();
-        searchTerm = searchTerm.toLowerCase();
-        if (currentText.indexOf(searchTerm) >= 0) {
-          $(this).show();
-        }
-      });
-    }
-  }
-
-  $(document).ready(function() {
-    $("#serch .container").hide();
-  });
-</script>
