@@ -4,6 +4,7 @@
     <link href="" rel="canonical" />
 	<!-- Link Swiper's CSS -->
 	<link rel="stylesheet" href="/swiperJS/swiper-bundle.min.css"/> 
+    <script src="/search-jquery.min.js"></script> 
 	<meta charset="UTF-8">
 	<link rel="icon" type="image/png" href="assets/svrt-logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -26,207 +27,221 @@
 </head>
 <body>
 
-    <div id="products-list">
-        <div class="container">
-            <div class="img-container">
-                    <img src="/assets/products/Slide1.JPG" /> </div>
-            <b>
-                <a>
-                    un breakable (ub) single sop dish by shiva diamond available in four colours 
-                </a>
-                <button>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id=""></span>
-                </button>
-                <p>
-                    List Prise : <font color="maroon" style="letter-spacing:0.1em; font-weight: bold;">₹90</font><br>
-                    Minimum Order : <font style="font-size:0.8em; color: cornflowerblue;">2500 pcs</font><br>
-                    Item Code : <font style="font-size: 0.8em; color: rgb(228, 0, 133); text-transform: uppercase;">shiva-04</font><br>
-                    Available :
-                    <font  style="color: rgba(0, 0, 0, 0.164); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color: rgba(0, 0, 255, 0.575); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color: rgba(0, 128, 0, 0.664); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color:rgba(255, 0, 128, 0.644); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font>
-                </p>
-            </b>
-        </div>
-    </div>
+       
+    <div id="search-bar"><input type="text" id="searchInput" placeholder="Search here"></div>
+    
+    <div id="serch" style="display:hidden;">
 
-    <div id="products-list">
-        <div class="container">
-            <div class="img-container">
-                    <img src="/assets/products/Slide2.JPG" /> </div>
-            <b>
-                <a>
-                    un breakable (ub) double sop dish square by shiva diamond available in four colours 
-                </a>
-                <button>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id=""></span>
-                </button>
-                <p>
-                    List Prise : <font color="maroon" style="letter-spacing:0.1em; font-weight: bold;">₹90</font><br>
-                    Minimum Order : <font style="font-size:0.8em; color: cornflowerblue;">2500 pcs</font><br>
-                    Item Code : <font style="font-size: 0.8em; color: rgb(228, 0, 133); text-transform: uppercase;">shiva-04</font><br>
-                    Available : 
-                    <font  style="color: rgba(0, 0, 0, 0.164); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color: rgba(0, 0, 255, 0.575); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color: rgba(0, 128, 0, 0.664); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color:rgba(255, 0, 128, 0.644); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font>
-              </p>
-            </b>
+        <div id="products-list">
+            <div class="container">
+                <div class="img-container">
+                        <img src="/assets/products/Slide1.JPG" /> 
+                </div>
+                <b>
+                    <a>
+                        single soap dish un breakable by shiva world shiva 01
+                    </a>
+                    <button>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id=""></span>
+                    </button>
+                    <p>
+                        List Prise : <font color="maroon" style="letter-spacing:0.1em; font-weight: bold;">₹90</font><br>
+                        Minimum Order : <font style="font-size:0.8em; color: cornflowerblue;">2500 pcs</font><br>
+                        Item Code : <font style="font-size: 0.8em; color: rgb(228, 0, 133); text-transform: uppercase;">shiva-01</font><br>
+                        Available :
+                        <font  style="color: rgba(0, 0, 0, 0.164); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color: rgba(0, 0, 255, 0.575); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color: rgba(0, 128, 0, 0.664); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color:rgba(255, 0, 128, 0.644); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font>
+                    </p>
+                </b>
+            </div>
         </div>
-    </div>
+    
+        <div id="products-list">
+            <div class="container">
+                <div class="img-container">
+                        <img src="/assets/products/Slide2.JPG" /> 
+                </div>
+                <b>
+                    <a>
+                        double sop dish square un breakable by shiva wprld shiva 02 
+                    </a>
+                    <button>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id=""></span>
+                    </button>
+                    <p>
+                        List Prise : <font color="maroon" style="letter-spacing:0.1em; font-weight: bold;">₹90</font><br>
+                        Minimum Order : <font style="font-size:0.8em; color: cornflowerblue;">2500 pcs</font><br>
+                        Item Code : <font style="font-size: 0.8em; color: rgb(228, 0, 133); text-transform: uppercase;">shiva-02</font><br>
+                        Available : 
+                        <font  style="color: rgba(0, 0, 0, 0.164); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color: rgba(0, 0, 255, 0.575); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color: rgba(0, 128, 0, 0.664); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color:rgba(255, 0, 128, 0.644); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font>
+                  </p>
+                </b>
+            </div>
+        </div>
+    
+        <div id="products-list">
+            <div class="container">
+                <div class="img-container">
+                        <img src="/assets/products/Slide3.JPG" /> 
+                </div>
+                <b>
+                    <a>
+                        double sop dish oval un breakable by shiva diamond shiva 03 
+                    </a>
+                    <button>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id=""></span>
+                    </button>
+                      <p>
+                        List Prise : <font color="maroon" style="letter-spacing:0.1em; font-weight: bold;">₹90</font><br>
+                        Minimum Order : <font style="font-size:0.8em; color: cornflowerblue;">2500 pcs</font><br>
+                        Item Code : <font style="font-size: 0.8em; color: rgb(228, 0, 133); text-transform: uppercase;">shiva-03</font><br>
+                        Available :
+                        <font  style="color: rgba(0, 0, 0, 0.164); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color: rgba(0, 0, 255, 0.575); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color: rgba(0, 128, 0, 0.664); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color:rgba(255, 0, 128, 0.644); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font>
+                    </p>
+                </b>
+            </div>
+        </div>
+    
+        <div id="products-list">
+            <div class="container">
+                <div class="img-container">
+                        <img src="/assets/products/Slide4.JPG" /> 
+                </div>
+                <b>
+                    <a>
+                        3 in 1 multi user soap dish with tooth accessories holder un breakable shiva 04 by shiva world
+                    </a>
+                    <button>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id=""></span>
+                    </button>
+                    <p>
+                        List Prise : <font color="maroon" style="letter-spacing:0.1em; font-weight: bold;">₹90</font><br>
+                        Minimum Order : <font style="font-size:0.8em; color: cornflowerblue;">2500 pcs</font><br>
+                        Item Code : <font style="font-size: 0.8em; color: rgb(228, 0, 133); text-transform: uppercase;">shiva-04</font><br>
+                        Available : 
+                        <font  style="color: rgba(0, 0, 0, 0.164); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color: rgba(0, 0, 255, 0.575); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color: rgba(0, 128, 0, 0.664); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color:rgba(255, 0, 128, 0.644); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font>
+                    </p>
+                </b>
+            </div>
+        </div>
+    
+        <div id="products-list">
+            <div class="container">
+                <div class="img-container">
+                        <img src="/assets/products/Slide5.JPG" /> 
+                </div>
+                <b>
+                    <a>
+                        4 in 1 soap dish with tumbler & tooth accessories holder un breakable by shiva world shiva 05
+                    </a>
+                    <button>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id=""></span>
+                    </button>
+                    <p>
+                        List Prise : <font color="maroon" style="letter-spacing:0.1em; font-weight: bold;">₹90</font><br>
+                        Minimum Order : <font style="font-size:0.8em; color: cornflowerblue;">2500 pcs</font><br>
+                        Item Code : <font style="font-size: 0.8em; color: rgb(228, 0, 133); text-transform: uppercase;">shiva-05</font><br>
+                        Available : 
+                        <font  style="color: rgba(0, 0, 0, 0.164); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color: rgba(0, 0, 255, 0.575); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color: rgba(0, 128, 0, 0.664); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color:rgba(255, 0, 128, 0.644); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font>
+                    </p>
+                </b>
+            </div>
+        </div>
+    
+        <div id="products-list">
+            <div class="container">
+                <div class="img-container">
+                        <img src="/assets/products/Slide6.JPG" /> 
+                </div>
+                <b>
+                    <a>
+                        5 in 1 multi-user soap dish oval with tooth accessories holder un breakable by shiva world shiva 06
+                    </a>
+                    <button>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id=""></span>
+                    </button>
+                    <p>
+                        List Prise : <font color="maroon" style="letter-spacing:0.1em; font-weight: bold;">₹90</font><br>
+                        Minimum Order : <font style="font-size:0.8em; color: cornflowerblue;">2500 pcs</font><br>
+                        Item Code : <font style="font-size: 0.8em; color: rgb(228, 0, 133); text-transform: uppercase;">shiva-06</font><br>
+                        Available : 
+                        <font  style="color: rgba(0, 0, 0, 0.164); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color: rgba(0, 0, 255, 0.575); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color: rgba(0, 128, 0, 0.664); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color:rgba(255, 0, 128, 0.644); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font>
+                    </p>
+                </b>
+            </div>
+        </div>
+    
+        <div id="products-list">
+            <div class="container">
+                <div class="img-container">
+                        <img src="/assets/products/Slide7.JPG" /> 
+                </div>
+                <b>
+                    <a>
+                        jumbo corner shelf un breakable for multipurpose by shiva world shiva 15
+                    </a>
+                    <button>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id="checked"></span>
+                        <span class="fa fa-star" id=""></span>
+                    </button>
+                    <p>
+                        List Prise : <font color="maroon" style="letter-spacing:0.1em; font-weight: bold;">₹90</font><br>
+                        Minimum Order : <font style="font-size:0.8em; color: cornflowerblue;">2500 pcs</font><br>
+                        Item Code : <font style="font-size: 0.8em; color: rgb(228, 0, 133); text-transform: uppercase;">shiva-15</font><br>
+                        Available : 
+                        <font  style="color: rgba(0, 0, 0, 0.164); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color: rgba(0, 0, 255, 0.575); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color: rgba(0, 128, 0, 0.664); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
+                        <font style="color:rgba(255, 0, 128, 0.644); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font>
+                    </p>
+                </b>
+            </div>
+        </div>
 
-    <div id="products-list">
-        <div class="container">
-            <div class="img-container">
-                    <img src="/assets/products/Slide3.JPG" /> </div>
-            <b>
-                <a>
-                    un breakable (ub) double sop dish oval by shiva diamond available in four colours 
-                </a>
-                <button>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id=""></span>
-                </button>
-                  <p>
-                    List Prise : <font color="maroon" style="letter-spacing:0.1em; font-weight: bold;">₹90</font><br>
-                    Minimum Order : <font style="font-size:0.8em; color: cornflowerblue;">2500 pcs</font><br>
-                    Item Code : <font style="font-size: 0.8em; color: rgb(228, 0, 133); text-transform: uppercase;">shiva-04</font><br>
-                    Available :
-                    <font  style="color: rgba(0, 0, 0, 0.164); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color: rgba(0, 0, 255, 0.575); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color: rgba(0, 128, 0, 0.664); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color:rgba(255, 0, 128, 0.644); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font>
-                </p>
-            </b>
-        </div>
-    </div>
-
-    <div id="products-list">
-        <div class="container">
-            <div class="img-container">
-                    <img src="/assets/products/Slide4.JPG" /> </div>
-            <b>
-                <a>
-                    un breakable (ub) 3 in 1 multi-user soap dish with tooth accessories holder 
-                </a>
-                <button>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id=""></span>
-                </button>
-                <p>
-                    List Prise : <font color="maroon" style="letter-spacing:0.1em; font-weight: bold;">₹90</font><br>
-                    Minimum Order : <font style="font-size:0.8em; color: cornflowerblue;">2500 pcs</font><br>
-                    Item Code : <font style="font-size: 0.8em; color: rgb(228, 0, 133); text-transform: uppercase;">shiva-04</font><br>
-                    Available : 
-                    <font  style="color: rgba(0, 0, 0, 0.164); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color: rgba(0, 0, 255, 0.575); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color: rgba(0, 128, 0, 0.664); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color:rgba(255, 0, 128, 0.644); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font>
-                </p>
-            </b>
-        </div>
-    </div>
-
-    <div id="products-list">
-        <div class="container">
-            <div class="img-container">
-                    <img src="/assets/products/Slide5.JPG" /> </div>
-            <b>
-                <a>
-                    un breakable (ub) 4 in 1 soap dish with tumbler & tooth accessories holder 
-                </a>
-                <button>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id=""></span>
-                </button>
-                <p>
-                    List Prise : <font color="maroon" style="letter-spacing:0.1em; font-weight: bold;">₹90</font><br>
-                    Minimum Order : <font style="font-size:0.8em; color: cornflowerblue;">2500 pcs</font><br>
-                    Item Code : <font style="font-size: 0.8em; color: rgb(228, 0, 133); text-transform: uppercase;">shiva-04</font><br>
-                    Available : 
-                    <font  style="color: rgba(0, 0, 0, 0.164); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color: rgba(0, 0, 255, 0.575); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color: rgba(0, 128, 0, 0.664); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color:rgba(255, 0, 128, 0.644); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font>
-                </p>
-            </b>
-        </div>
-    </div>
-
-    <div id="products-list">
-        <div class="container">
-            <div class="img-container">
-                    <img src="/assets/products/Slide6.JPG" /> </div>
-            <b>
-                <a>
-                    un breakable (ub) 5 in 1 multi-user soap dish oval with tooth accessories holder 
-                </a>
-                <button>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id=""></span>
-                </button>
-                <p>
-                    List Prise : <font color="maroon" style="letter-spacing:0.1em; font-weight: bold;">₹90</font><br>
-                    Minimum Order : <font style="font-size:0.8em; color: cornflowerblue;">2500 pcs</font><br>
-                    Item Code : <font style="font-size: 0.8em; color: rgb(228, 0, 133); text-transform: uppercase;">shiva-04</font><br>
-                    Available : 
-                    <font  style="color: rgba(0, 0, 0, 0.164); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color: rgba(0, 0, 255, 0.575); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color: rgba(0, 128, 0, 0.664); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color:rgba(255, 0, 128, 0.644); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font>
-                </p>
-            </b>
-        </div>
-    </div>
-
-    <div id="products-list">
-        <div class="container">
-            <div class="img-container">
-                    <img src="/assets/products/Slide7.JPG" /> </div>
-            <b>
-                <a>
-                    un breakable (ub) jumbo corner shelf's set with 3pcs set for wall fitting holds upto 45kg
-                </a>
-                <button>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id="checked"></span>
-                    <span class="fa fa-star" id=""></span>
-                </button>
-                <p>
-                    List Prise : <font color="maroon" style="letter-spacing:0.1em; font-weight: bold;">₹90</font><br>
-                    Minimum Order : <font style="font-size:0.8em; color: cornflowerblue;">2500 pcs</font><br>
-                    Item Code : <font style="font-size: 0.8em; color: rgb(228, 0, 133); text-transform: uppercase;">shiva-04</font><br>
-                    Available : 
-                    <font  style="color: rgba(0, 0, 0, 0.164); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color: rgba(0, 0, 255, 0.575); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color: rgba(0, 128, 0, 0.664); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font> 
-                    <font style="color:rgba(255, 0, 128, 0.644); font-size: 1.3em; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">●</font>
-                </p>
-            </b>
-        </div>
     </div>
 
     
@@ -323,6 +338,30 @@
     -webkit-text-stroke: 0.5px;
     -webkit-text-stroke-color: black;
     }
+    #search-bar input{
+        width: 90%;
+        height: 5vh;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1em;
+        background:#fff;
+        padding: 1%;
+        margin: 1%;
+        z-index: 9;
+        
+    }
+    #search-bar{
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: sticky;
+        top:0%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(46, 91, 128);
+    }
+    input::placeholder{
+        background-color:#fff;
+    }
     @media screen and (orientation: portrait) {
         body{
             display: block;
@@ -334,3 +373,29 @@
         }
     }
 </style>
+
+<script>
+    $("#searchInput").on('keyup', function() {
+    var searchValue = $(this).val();
+    searchAndFilter(searchValue)
+  });
+
+  function searchAndFilter(searchTerm) {
+    if (searchTerm == '') {
+      $("#serch .container").hide()
+    } else {
+      $("#serch .container").each(function() {
+        var currentText = $(this).text();
+        currentText = currentText.toLowerCase();
+        searchTerm = searchTerm.toLowerCase();
+        if (currentText.indexOf(searchTerm) >= 0) {
+          $(this).show();
+        }
+      });
+    }
+  }
+
+  $(document).ready(function() {
+    $("#serch .container").hide();
+  });
+</script>
