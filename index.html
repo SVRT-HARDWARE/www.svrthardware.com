@@ -11,7 +11,8 @@
 	<title>SVRT HARDWARE</title>
 	<link href="" rel="canonical" />
 	<!-- Link Swiper's CSS -->
-	<link rel="stylesheet" href="/swiperJS/swiper-bundle.min.css"/> 
+	<link rel="stylesheet" href="/swiperJS/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/home-page.css" />
 	<meta charset="UTF-8">
 	<link rel="icon" type="image/png" href="assets/svrt-logo.png" />
 	<meta name="viewport" content= "width=device-width, initial-scale=1 user-scalable=no" />
@@ -41,6 +42,9 @@
             <a href="/tawk-to.html" id="chatBtn"><img src="/assets/chat-button.png" style="width: 6vw; height:auto;"></img></a>
             <button id="shareBtn"><img src="/assets/share-button.svg" style="width: 6vw; height:auto;"></img></button>
         </header>
+        <div id="searchbar-container">
+            <a onclick="openNav()">≡</a><input type="text" id="search-input" placeholder="search here"><input type="submit" id="search" value="🔎">
+        </div>
         <div id="menu" class="my-menu">
             <div onclick="closeNav()" style="width: 100%; height: 14vw; background-color: transparent; position: sticky; top: 0;"></div>
             <p>Menu Potions</p>
@@ -189,246 +193,12 @@
                 </span>
             </b>
     </div>   
-            <div id="land" class="landscape"><img src="/landscape.svg"/></div>
+            <div id="land" class="landscape"><center><img src="/landscape.png"/></center></div>
 
     </body>
 </html>
 
-    <style type="text/css">
-        body{
-            margin:auto;
-            overflow-x:hidden;
-            background-color:#ffffff;
-            user-select: none;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            -ms-overflow-style: none;
-            overflow: none;
-            -webkit-tap-highlight-color: transparent; /* for removing the highlight */
-        }
-        body::-webkit-scrollbar{
-            display: none;
-            scrollbar-color: transparent;
-        }
-        .swipes::-webkit-scrollbar{
-            display: none;
-            scrollbar-color: transparent;
-        }
-        .port::-webkit-scrollbar{
-            display: none;
-            scrollbar-color: transparent;
-        }
-        html{
-            -ms-overflow-style:none;
-            scrollbar-width:none;
-            scroll-behavior: smooth;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        html::-webkit-scrollbar{
-            display:none;
-            scroll-behavior: smooth;
-            scrollbar-color: inheritance;
-            scrollbar-width: none;
-        }
-        
-    header{
-        width:100%;
-        height:14vw;
-        position: fixed;
-        display: flex;
-        font-size: 5vw;
-        text-align: center;
-        color: black;
-        border-bottom: 0.3vw solid black;
-        background-color:rgb(255,230,179);
-        align-items: center;
-        z-index:9;
-        top: 0%;
-    }
-    header p{
-        margin-top:;
-        padding-top:;
-    }
-    /*--------- Menu Style --------------*/
-    .my-menu{
-        width: 0;
-        height: 100%;
-        display: flow-root;
-        background:rgb(255,230,179);
-        left: 0;
-        top: 0;
-        position: fixed;
-        transition: 0.3s;
-        z-index: 9;
-        overflow: auto;
-    }
-    .my-menu p{
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        padding:1vw;
-        font-size: 4.5vw;
-        display: flex;
-        border-bottom: 0.8vw solid black;
-        align-items: center;
-    }
-    #shareBtn{
-        width: 3vw;
-        height: auto;
-        border: none;
-        background: none;
-        margin-left: ;
-        position: relative;
-        padding-top: 2vw;
-    }
-    #chatBtn{
-        width: 6vw;
-        height: auto;
-        border: none;
-        background: none;
-        margin-left: 33%;
-        margin-right: 3%;
-        position: relative;
-        padding-top: 2vw;
-    }
-    .my-menu::-webkit-scrollbar{
-        display: none;
-    }
-    .container{
-        width:95%;
-		height:auto;
-		position:relative;
-		background-color:rgb(255,230,179);
-		border-radius:0px;
-		padding:1vw;
-		float: left;
-        margin-left: 1.36vw;
-        margin-top: 1vw;
-        margin-bottom: 3vw;
-        padding-bottom: 2.5vw;
-        border-radius: 5vw;
-        z-index: 1;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .items img{
-        width: 48%;
-        height: auto;
-        float: left;
-        position: relative;
-        margin: 0.5vw;
-        border-radius: 4vw;
-        margin-top: 1vw;
-        margin-left: 1vw;
-    }
-    .items{
-        justify-content: center;
-        justify-items: center;
-        justify-self: center;
-        align-items: center;
-        align-content: center;
-        align-tracks: center;
-        color: black;
-    }
-    .see-all {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        float: right;
-        margin-top: -10.5vw;
-        margin-right: 6%;
-        position: relative;
-        font-weight: lighter;
-        font-size: 4vw;
-    }
-    .desp{
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        margin-left: 4%;
-        font-weight: lighter;
-        font-size: 4.5vw;
-    }
-    .swipes{
-        width: 100%;
-        height: auto;
-        display: flex;
-        white-space: nowrap;
-        overflow-x: auto;
-        overflow-x: scroll;
-        margin-bottom: 3.5%;
-        margin-top: -2.2%;
-        padding-left: 2.2vw;
-    }
-    .swipes img{
-        width: 17.5%;
-        height: auto;
-        padding: 1.5vw;
-        border-radius: 100px;
-    }
-    a, a:hover, a:focus, a:active{
-        text-decoration: none;
-        color: inherit;
-        -webkit-tap-highlight-color: transparent; /* for removing the highlight */
-    }
-    .landscape{
-        width:100%;
-        height: auto;
-        text-align: center;
-        justify-content: center;
-        vertical-align: middle;
-        align-items: middle;
-        position:relative;
-        background-color: #ffe6b3;
-        overflow: hidden;
-        scroll-behavior: none;
-        overflow-y: hidden;
-    }
-    .landscape img{
-        width: 100%;
-        height: 100%;
-    }
-        /* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
-    @media only screen and (orientation:landscape) {
-        #land { display:block; }
-        #port { display:none; }
-    }
-
-    /* (B) CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
-    @media only screen and (orientation:portrait) {
-        #land { display:none; }
-        #port { display:block; }
-    }
-
-    </style>
-
-    <!-- Demo styles -->
-    <style>
-      .swiper {
-        width: 100%;
-        height: auto;
-		margin-top:14.7%;
-		}
-      .swiper-slide {
-        width:100%;
-		height:auto;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-      }
-    </style>
+   
 
 
     <!-- Swiper JS -->
@@ -531,6 +301,18 @@
                 alert("Browser doesn't support this API !");
             }
         })
+    </script>
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            document.getElementById("searchbar-container").style.top = "0";
+          } else {
+            document.getElementById("searchbar-container").style.top = "-50%";
+          }
+        }
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
