@@ -38,13 +38,11 @@
         
         <!-- Menu Here -->
         <header>
-            <p>&nbsp; <a onclick="openNav()">≡ SVRT HARDWARE </a></p>
-            <a href="/tawk-to.html" id="chatBtn"><img src="/assets/chat-button.png" style="width: 6vw; height:auto;"></img></a>
-            <button id="shareBtn"><img src="/assets/share-button.svg" style="width: 6vw; height:auto;"></img></button>
+            <div id="searchbar-container">
+                <a onclick="openNav()">≡</a><input type="text" id="search-input" placeholder="search here" autocomplete="off" autocorrect="off" spellcheck="false">
+            </div>
         </header>
-        <div id="searchbar-container">
-            <a onclick="openNav()">≡</a><input type="text" id="search-input" placeholder="search here" autocomplete="off" autocorrect="off" spellcheck="false">
-        </div>
+       
         <div id="menu" class="my-menu">
             <p>Menu Potions</p>
             <p>Menu Potions</p>
@@ -300,18 +298,6 @@
                 alert("Browser doesn't support this API !");
             }
         })
-    </script>
-    <script>
-        // When the user scrolls down 20px from the top of the document, slide down the navbar
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-            document.getElementById("searchbar-container").style.top = "0";
-          } else {
-            document.getElementById("searchbar-container").style.top = "-50%";
-          }
-        }
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
