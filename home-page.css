@@ -36,7 +36,7 @@ html::-webkit-scrollbar{
 header{
 width:100%;
 height:7.8vh;
-position: sticky;
+position: fixed;
 display: flex;
 font-size: 5vw;
 color: black;
@@ -183,7 +183,7 @@ height: auto;
 #searchbar-container{
     width: 100%;
     height: 7.8%;
-    position: sticky;
+    position: fixed;
     overflow: hidden;
     top:-50%;
     display: flex;
@@ -197,11 +197,12 @@ height: auto;
     width: 70vw;
     display: inline-block;
     overflow: auto;
+    position: sticky;
     border: 1px solid black;
     border-right: none;
     outline: none;
     line-height: 1.5em;
-    padding: 12px 20px;
+    padding: 3%;
     border-radius: 0.3em 0em 0em 0.3em;
     text-transform: capitalize;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -211,6 +212,7 @@ height: auto;
 #searchbar-container #search{
     width: 15vw;
     height: 6vh;
+    position: sticky;
     display: inline-block;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
