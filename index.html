@@ -43,10 +43,10 @@
             <button id="shareBtn"><img src="/assets/share-button.svg" style="width: 6vw; height:auto;"></img></button>
         </header>
         <div id="searchbar-container">
-            <a onclick="openNav()">≡</a><input type="text" id="search-input" placeholder="search here"><input type="submit" id="search" value="🔎">
+            <a onclick="openNav()">≡</a><input type="text" id="search-input" placeholder="search here" autocomplete="off" autocorrect="off" spellcheck="false">
+            <input type="submit" id="search" value="🔎">
         </div>
         <div id="menu" class="my-menu">
-            <div onclick="closeNav()" style="width: 100%; height: 14vw; background-color: transparent; position: sticky; top: 0;"></div>
             <p>Menu Potions</p>
             <p>Menu Potions</p>
             <p>Menu Potions</p>
@@ -257,7 +257,7 @@
 
     <script>
         function openNav() {
-        document.getElementById("menu").style.width = "100%";
+        document.getElementById("menu").style.width = "65%";
         }
         
         function closeNav() {
