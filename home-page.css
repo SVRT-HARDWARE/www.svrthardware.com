@@ -182,7 +182,7 @@ height: auto;
 }
 #search-header{
     width: 100%;
-    height:absolute;
+    height:7.8vh;
     position: fixed;
     display: flex;
     align-items: center;
