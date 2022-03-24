@@ -182,9 +182,9 @@ height: auto;
 }
 #search-header{
     width: 100%;
-    height:auto;
+    height:100%;
     position: fixed;
-    display: block;
+    overflow-y: auto;
     top: -50%;
     transition: 0.1s;
     z-index: 9;
@@ -193,7 +193,6 @@ height: auto;
     width: 100%;
     height: 7.8vh;
     position: sticky;
-    top:0;
     align-items: center;
     justify-content: center;
     z-index: 9;
