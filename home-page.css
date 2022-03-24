@@ -203,7 +203,7 @@ height: auto;
 #searchbar-container #search-input{
     width: 70vw;
     display: inline-block;
-    position: absolute;
+    position: relative;
     border: 1px solid black;
     border-right: none;
     outline: none;
