@@ -38,10 +38,14 @@
         
         <!-- Menu Here -->
         <header>
+            
+        </header>
+        
+        <div id="search-header">
             <div id="searchbar-container">
                 <a onclick="openNav()">≡</a><input type="text" id="search-input" placeholder="search here" autocomplete="off" autocorrect="off" spellcheck="false">
             </div>
-        </header>
+        </div>
        
         <div id="menu" class="my-menu">
             <p>Menu Potions</p>
@@ -298,6 +302,18 @@
                 alert("Browser doesn't support this API !");
             }
         })
+    </script>
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("search-header").style.top = "0";
+          } else {
+            document.getElementById("search-header").style.top = "-50%";
+          }
+        }
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
