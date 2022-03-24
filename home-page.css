@@ -202,7 +202,6 @@ height: auto;
 }
 #searchbar-container #search-input{
     width: 70vw;
-    height: 7.5vh;
     display: inline-block;
     overflow: auto;
     position: sticky;
