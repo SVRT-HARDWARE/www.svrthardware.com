@@ -184,7 +184,7 @@ height: auto;
     width: 70%;
     height: 6.5vh;
     display: inline-block;
-    position: absolute;
+    position: sticky;
     direction: ltr;
     border: 1px solid black;
     border-right: none;
