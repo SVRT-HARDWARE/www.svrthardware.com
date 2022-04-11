@@ -33,24 +33,6 @@ html::-webkit-scrollbar{
     scrollbar-width: none;
 }
 
-header{
-width:100%;
-height:7.8vh;
-position: sticky;
-display: flex;
-flex-direction: column;
-font-size: 5vw;
-color: black;
-border-bottom: 0.3vw solid black;
-background-color:rgb(255,230,179);
-align-items: center;
-z-index:9;
-top: 0;
-}
-header p{
-margin-top:;
-padding-top:;
-}
 /*--------- Menu Style --------------*/
 .my-menu{
 width: 0;
@@ -186,13 +168,11 @@ height: auto;
     display: flex;
     align-items: center;
     overflow: hidden;
-    top: -50%;
-    transition: 0.1s;
     z-index: 9;
 }
 #searchbar-container{
     width: 100%;
-    height: 7.8vh;
+    height: 7vh;
     position: sticky;
     align-items: center;
     justify-content: center;
