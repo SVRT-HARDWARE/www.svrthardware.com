@@ -166,10 +166,11 @@ height: auto;
     height:auto;
     position: fixed;
     top: 0;
+    transition: 0.5ms;
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding: 1% 0% 1.5% 0%;
+    padding: 1%;
     z-index: 9;
     background-color: rgb(255,230,179);
 }
@@ -193,16 +194,18 @@ height: auto;
     padding: 3%;
     border-radius: 0.3em 0em 0em 0.3em;
     text-transform: capitalize;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 1em;
     box-sizing: border-box;
 }
-#searchbar-container #search{
+#searchbar-container button{
     width: 15vw;
-    height: 6vh;
+    height: auto;
     position: sticky;
     display: inline-block;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 3%;
+    line-height: 1.5em;
+    font-family: Arial, sans-serif;
     color: black;
     background-color: rgb(255, 213, 129);
     border:1px solid black;
@@ -215,6 +218,7 @@ height: auto;
 #searchbar-container> a{
     font-size:2em;
     padding: 1%;
+    font-family: arial,sans-serif;
     text-decoration: none;
 }
 /* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
