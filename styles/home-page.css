@@ -3,8 +3,6 @@ body{
     overflow-x:hidden;
     background-color:#ffffff;
     user-select: none;
-    -ms-overflow-style: none;
-    overflow: none;
     -webkit-tap-highlight-color: transparent; /* for removing the highlight */
 }
 body::-webkit-scrollbar{
@@ -77,26 +75,17 @@ padding-top: 2vw;
 display: none;
 }
 .container{
-width:95%;
+width:100%;
 height:auto;
-position:static;
-background-color:rgb(255,230,179);
-padding:1vw;
-margin-left: 1.50vw;
-margin-top: 1vw;
-margin-bottom: 3vw;
-padding-bottom: 2.5vw;
-border-radius: 5vw;
+margin: 1vw 0vw 1.5vw 0vw;
+border-top: 2.5vw solid #eaeded;
+padding: 3vw 0 4vw 0vw;
 z-index:1;
-display:flex;
-justify-content: center;
-align-items: center;
 }
 .items img{
 width: 100%;
 height: auto;
 position: relative;
-margin: 0.5vw;
 border-radius: 4vw;
 margin-top: 1vw;
 margin-left: 1vw;
@@ -105,8 +94,8 @@ z-index: 1;
 .items{
     display: grid;
     grid-template-columns: 48% 48%;
-    grid-gap: 1%;
-    position: static;
+    grid-gap: 2%;
+    position: relative;  
 }
 span{
     z-index: 1;
@@ -175,13 +164,13 @@ height: auto;
 #searchbar-container{
     width: 100%;
     height: auto;
+    display: flex;
     position: sticky;
     align-items: center;
-    justify-content: center;
     z-index: 9;
 }
 #searchbar-container #search-input{
-    width: 70%;
+    width: 73%;
     display: inline-block;
     position: sticky;
     direction: ltr;
