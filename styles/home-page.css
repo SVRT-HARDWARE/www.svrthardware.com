@@ -79,8 +79,17 @@ width:100%;
 height:auto;
 margin: 1vw 0vw 1.5vw 0vw;
 border-top: 2.5vw solid #eaeded;
-padding: 3vw 0 4vw 0vw;
+padding: 0vw 0 4vw 0vw;
 z-index:1;
+}
+.container b{
+    display: grid;
+    grid-template-columns: 73% 27%;
+    padding: 0% 1% 0% 1.5%;
+    font-family: arial,sans-serif;
+    justify-items: legacy;
+    font-size: 4.5vw;
+    font-weight: lighter;
 }
 .items img{
 width: 100%;
