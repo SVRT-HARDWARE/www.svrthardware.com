@@ -14,33 +14,33 @@
       }
     ],
     "start_url": "/index.html",
-    "background_color": "#ffe6b3",
+    "background_color": "#ffffff",
     "orientation":"portrait-primary",
     "display": "standalone",
     "shortcuts": [
       {
-        "name": "Fallback",
+        "name": "Shortcut 1",
         "short_name": "Fallback",
         "description": "View the Fallback",
         "url": "/fallback.html",
         "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }]
       },
       {
-        "name": "Visit Store",
+        "name": "shortcut 2",
         "short_name": "Visit Store",
         "description": "Visit Store",
         "url": "/visit-store.html",
         "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }]
       },
       {
-        "name": "Contact Us",
+        "name": "shortcut 3",
         "short_name": "Contact Us",
         "description": "View the Contact Us",
         "url": "/contact-us.html",
         "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }]
       },
       {
-        "name": "Home",
+        "name": "shortcut 4",
         "short_name": "Home",
         "description": "View the Home",
         "url": "/index.html",
