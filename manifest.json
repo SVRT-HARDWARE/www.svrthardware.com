@@ -28,15 +28,18 @@
         "sizes": "72x72"
       },
       {
-        "src": "/app-icons/icon-48-48",
+        "src": "/app-icons/icon-48-48.png",
         "type": "image/png",
         "sizes": "48x48"
       }
     ],
     "start_url": "/index.html",
+    "scope":"/",
+    "theme":"#ffffff",
     "background_color": "#ffffff",
+    "theme_color": "#ffffff",
     "orientation":"portrait-primary",
-    "display": "fullscreen",
+    "display": "standalone",
     "shortcuts": [
       {
         "name": "Shortcut 1",
@@ -65,6 +68,14 @@
         "description": "View the Home",
         "url": "/index.html",
         "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }]
+      }
+    ],
+    "url_handlers": [
+      {
+        "origin": "https://coms.svrthardware.com"
+      },
+      {
+        "origin": "https://*.svrthardware.com"
       }
     ]
 }
