@@ -28,7 +28,19 @@ html::-webkit-scrollbar{
     scrollbar-color: inheritance;
     scrollbar-width: none;
 }
-
+/*---------------- nav bar style ---------*/
+nav{
+    display: flex;
+    width: 100%;
+    height:7.5vh;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    z-index: 9;
+    font-size: 8vw;
+    border-bottom: 1vw solid #d89000;
+    background-color: rgb(255,230,179);
+}
 /*--------- Menu Style --------------*/
 .my-menu{
 width: 0;
@@ -57,6 +69,22 @@ align-items: center;
     padding: 0;
     margin-top: auto;
     position: relative;
+}
+#overlay{
+    width: 0%;
+    height: 100%;
+    top: 0;
+    display: block;
+    position: fixed;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition:background-color 2s;
+}
+#overlay .fa-close{
+    font-size: 6vw;
+    float: right;
+    padding: 5% 10% 0% 0%;
+    opacity: 0.5;
 }
 #chatBtn{
 width: 6vw;
@@ -148,6 +176,7 @@ display: flex;
 white-space: nowrap;
 overflow-x: auto;
 overflow-x: scroll;
+overflow-y: hidden;
 margin-bottom: 3.5%;
 padding:2.5% 0% 0% 3%;
 border-top: 2.5vw solid #eaeded;
@@ -253,7 +282,7 @@ body{background-color: rgb(255,230,179); overflow: hidden;}
 .swiper {
 width: 100%;
 height: auto;
-margin-top:5%;
+margin-top: 17%;
 z-index: 1;
 position:relative;
 }
