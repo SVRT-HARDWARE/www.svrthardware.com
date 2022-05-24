@@ -40,26 +40,31 @@
             
             <!-- Menu Here -->
             
+            <nav>
+                <a onclick="openNav()"><li class="fa-solid fa-bars"></li></a>
+            </nav>
             <div id="search-header">
                 <div id="searchbar-container">
                     <a onclick="openNav()"><li class="fa-solid fa-bars"></li></a><input type="text" id="search-input" placeholder="search here" autocomplete="off" autocorrect="off" spellcheck="false"><button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
             
-            
-            <div id="menu" class="my-menu">
-                <a onclick="closeNav()"> <img src="/assets/menu-header.png" style="width: 98%; height:auto; padding: 1%; border: none;"></a>
-                <p>Menu Potions Title 1</p>
-                <p>Menu Potions Title 2</p>
-                <p>Menu Potions Title 3</p>
-                <p>Menu Potions Title 4</p>
-                <p>Menu Potions Title 5</p>
-                <p>Menu Potions Title 6</p>
-                <p>Menu Potions Title 7</p>
-                <p>Menu Potions Title 8</p>
-                <p>Menu Potions Title 9</p>
-                <p>Menu Potions Title 10</p>
-                <img src="/assets/default-pp.png" id="shareBtn" />
+            <div id="overlay" onclick="closeNav()">
+                <a class="fa-solid fa-close"></a>
+                <div id="menu" class="my-menu">
+                    <a onclick="closeNav()"> <img src="/assets/menu-header.png" style="width: 98%; height:auto; padding: 1%; border: none;"></a>
+                    <p>Menu Potions Title 1</p>
+                    <p>Menu Potions Title 2</p>
+                    <p>Menu Potions Title 3</p>
+                    <p>Menu Potions Title 4</p>
+                    <p>Menu Potions Title 5</p>
+                    <p>Menu Potions Title 6</p>
+                    <p>Menu Potions Title 7</p>
+                    <p>Menu Potions Title 8</p>
+                    <p>Menu Potions Title 9</p>
+                    <p>Menu Potions Title 10</p>
+                    <img src="/assets/default-pp.png" id="shareBtn" />
+                </div>
             </div>
 
             <!-- Swiper  Banners-->
@@ -196,11 +201,17 @@
 
     <script>
         function openNav() {
-        document.getElementById("menu").style.width = "90%";
+        document.getElementById("menu").style.width = "75%";
+        document.getElementById("overlay").style.width = "100%";
+        const body = document.querySelector("body");
+        body.style.overflow = "hidden";
         }
         
         function closeNav() {
         document.getElementById("menu").style.width = "0%";
+        document.getElementById("overlay").style.width = "0%";
+        const body = document.querySelector("body");
+        body.style.overflow = "scroll";
         }
     </script>
     <script>
