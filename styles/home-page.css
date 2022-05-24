@@ -77,11 +77,12 @@ align-items: center;
     display: block;
     position: fixed;
     z-index: 9;
-    background-color: rgba(0, 0, 0, 0.3);
-    transition:background-color 2s;
+    background-color: rgba(0, 0, 0, 0.39);
+    transition:background-color 0.3s;
 }
-#overlay .fa-close{
-    font-size: 6vw;
+#overlay-close{
+    width: 13.5%;
+    height: 100%;
     float: right;
     padding: 5% 10% 0% 0%;
     opacity: 0.5;
