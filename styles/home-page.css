@@ -58,14 +58,6 @@ align-items: center;
     margin-top: auto;
     position: relative;
 }
-#shareBtn{
-width: 3vw;
-height: auto;
-border: none;
-background: none;
-position: relative;
-padding-top: 2vw;
-}
 #chatBtn{
 width: 6vw;
 height: auto;
