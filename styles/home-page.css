@@ -38,11 +38,12 @@ html::-webkit-scrollbar{
 /* -----------------------Disabeling Screen Shots---------- */
 @media print {
  
-    html,
     body {
 
         /* Hide the whole page */
         display: none;
+        visibility: hidden;
+        background-color: black;
     }
 }
 
