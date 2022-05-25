@@ -198,20 +198,20 @@
             window.location = "/index-com.html";
         }
     </script>
-
+    <!-- ------------------menu script-------------------- -->
     <script>
         function openNav() {
         document.getElementById("menu").style.width = "75%";
         document.getElementById("overlay").style.width = "100%";
         const body = document.querySelector("body");
-        body.style.overflow = "hidden";
+        body.style.overflowY = "hidden";
         }
         
         function closeNav() {
         document.getElementById("menu").style.width = "0%";
         document.getElementById("overlay").style.width = "0%";
         const body = document.querySelector("body");
-        body.style.overflow = "scroll";
+        body.style.overflowY = "scroll";
         }
     </script>
     <script>
