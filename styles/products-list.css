@@ -1,0 +1,128 @@
+body{
+    margin: auto;
+    background-color:#fefaf0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1px solid rgb(223, 220, 220);
+    border-radius: 0.3em;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    margin: 2%;
+}
+.img-container{
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    margin-right: 2%;
+    background: rgba(0, 0, 0, 0.02);
+}
+.img-container img{
+    width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+    padding: 2%;
+}
+.container a{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-height: 1.5em;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-family: arial,sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+    padding: 0% 0.5% 0% 0%;
+}
+.container b p{
+    font-size: 1em;
+    font-family:arial,sans-serif;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.418);
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline;
+    line-height: 1.3em;
+}
+.container b{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+#products-list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.container button{
+    display: inline-block;
+    border: none;
+    background: none;
+    text-align: left;
+    font-size: 4vw;
+    color: orange;
+    letter-spacing: 0.1em;
+    padding-bottom: 0.5em;
+    margin-top: 2%;
+}
+.container button font{
+    display: inline;
+    background-color: green;
+    color: #fff;
+    padding:2%;
+    font-size: 3.5vw;
+    text-align: center;
+    border-radius: 1vw;
+}
+#search-bar input{
+    width: 90%;
+    height: 5vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    background:#fff;
+    padding: 1%;
+    margin: 1%;
+    z-index: 9;
+    
+}
+#search-bar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: sticky;
+    top:0%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(46, 91, 128);
+}
+input::placeholder{
+    background-color:#fff;
+}
+@media screen and (orientation: portrait) {
+    body{
+        display: block;
+    }
+}
+@media screen and (orientation: landscape) {
+    body{
+        visibility: hidden;
+        overflow: hidden;
+    }
+}
