@@ -11,6 +11,7 @@ body{
 body::-webkit-scrollbar{
     display: none;
     scrollbar-color:transparent;
+   scrollbar: transparent;
     scrollbar-width: none;
     visibility: hidden;
 }
