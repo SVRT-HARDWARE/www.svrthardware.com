@@ -11,7 +11,6 @@ body{
 body::-webkit-scrollbar{
     display: none;
     scrollbar-color:transparent;
-   scrollbar: transparent;
     scrollbar-width: none;
     visibility: hidden;
 }
@@ -31,15 +30,15 @@ html{
 html::-webkit-scrollbar{
     display:none;
     scroll-behavior: smooth;
-    scrollbar-color: inheritance;
+    scrollbar-color: transparent;
     scrollbar-width: none;
     visibility: hidden;
 }
 
 /* -----------------------Disabeling Screen Shots---------- */
-@media print {
+@media print{
  
-    html {
+    body{
 
         /* Hide the whole page */
         display: none;
