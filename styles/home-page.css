@@ -57,17 +57,34 @@ html::-webkit-scrollbar{
 
 /*---------------- nav bar style ---------*/
 nav{
-    display: flex;
-    width: 100%;
-    height:auto;
-    position: fixed;
+    width: auto;
+    height: auto;
+    display: grid;
+    position: sticky;
+    grid-template-columns: 75% 25%;
     align-items: center;
-    padding: 1% 1% 1.5% 1%;
+    align-self: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 3% 0% 3% 1%;
     top: 0;
     z-index: 9;
     font-size: 8vw;
     border-bottom: 1vw solid #d89000;
     background-color: rgb(255,230,179);
+}
+nav img{
+    width:62%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    margin: 0% 0 0 1%;
+}
+nav :last-child{
+    word-spacing: 0.2em;
+}
+nav :last-child :hover{
+    color: #9e3601;
 }
 /*--------- Menu Style --------------*/
 .my-menu{
@@ -389,7 +406,7 @@ body{background-color: rgb(255,230,179); overflow: hidden;}
 .swiper {
 width: 100%;
 height: auto;
-margin-top: 17%;
+margin-top: 1%;
 z-index: 1;
 position:relative;
 }
