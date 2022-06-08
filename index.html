@@ -46,8 +46,8 @@
                 <div><i class="fa-solid fa-cart-shopping"></i> <i class="fa-solid fa-address-card"></i></div>
             </nav>
             <div id="search-header">
-                <form id="searchbar-container" autocomplete="off" autocorrect="off" spellcheck="false">
-                    <a onclick="openNav()"><li class="fa-solid fa-bars"></li></a><input type="text" placeholder="search here" id="search-input" /><button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <form method="post" id="searchbar-container" autocomplete="off" autocorrect="off" spellcheck="false" target="self" action="/">
+                    <a onclick="openNav()"><li class="fa-solid fa-bars"></li></a><input type="text" placeholder="search here" name="usersearch" id="search-input" /><button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
             <ul class="list"></ul>
@@ -407,6 +407,7 @@
   </style>
 
   <script src="/java scripts/search-suggestions.js"></script>
+  <script src="/java scripts/search-engine.js"></script>
 
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
