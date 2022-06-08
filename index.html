@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/styles/fonts awesome/css/all.css" />
     <link rel="stylesheet" href="/styles/fonts awesome/css/fontawesome.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="/java scripts/search-suggestions.js"></script>
 	<meta charset="UTF-8">
 	<link rel="icon" type="image/png" href="assets/svrt-logo.png" />
 	<meta name="viewport" content= "width=device-width, initial-scale=1 user-scalable=no" />
@@ -46,10 +47,12 @@
                 <div><i class="fa-solid fa-cart-shopping"></i> <i class="fa-solid fa-address-card"></i></div>
             </nav>
             <div id="search-header">
-                <div id="searchbar-container">
-                    <a onclick="openNav()"><li class="fa-solid fa-bars"></li></a><input type="text" id="search-input" placeholder="search here" autocomplete="off" autocorrect="off" spellcheck="false"><button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
+                <form id="searchbar-container" autocomplete="off" autocorrect="off" spellcheck="false">
+                    <a onclick="openNav()"><li class="fa-solid fa-bars"></li></a><input type="text" placeholder="search here" id="search-input" /><button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
             </div>
+            <ul class="list"></ul>
+            
             
             <div id="overlay">
                 <a id="overlay-close" onclick="closeNav()"></a>
