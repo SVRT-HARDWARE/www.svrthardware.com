@@ -1,17 +1,17 @@
-const searchInput = document.getElementById("search-container");
+const searchForm = document.getElementById("searchbar-container");
 const searchButton = document.getElementById("search");
 
 searchButton.addEventListener("click", (e) => {
     e.preventDefault();
-    const usersearch = searchInput.usersearch.value;
+    const username = searchForm.username.value;
 
-    if (usersearch === "ayla" ) {
-        window.open('/products/example-product.html',);
+    if (username === "ayla" , "Ayla") {
+        window.open('/products/example-product.html');
         return false;
     } 
     
     else {
-        window.open('');
+        window.open('fallback.html');
         return false;
     }
 })
