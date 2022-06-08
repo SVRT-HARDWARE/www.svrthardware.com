@@ -394,9 +394,10 @@ ul {
     height: auto;
     background-color: #ffe6b3;
     position: fixed;
-    top: 7.5%;
-    font-family: arial , sans-serif;
     z-index: 9;
+    top:11vw;
+    border-top:1vw solid #d89000;
+    font-family: arial , sans-serif;
 }
 .list {
 width: 100%;
