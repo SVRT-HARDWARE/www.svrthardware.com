@@ -11,11 +11,12 @@ searchButton.addEventListener("click", (e) => {
         return false;
     }
 
-    if (username === "amy"){
+    else if (username === "amy")
+    {
         location.href="/download-app.html";
         return false;
     }
-    if (username === "fuck"){
+    else if (username === "fuck"){
         location.href="/products/example-product.html";
         return false;
     }
