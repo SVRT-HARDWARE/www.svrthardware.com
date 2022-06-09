@@ -22,7 +22,7 @@ let names = [
     "Mitchell",
     "Harvey",
     "Lucy",
-    "Amy",
+    "amy",
     "Glen",
     "Peter",
   ];
