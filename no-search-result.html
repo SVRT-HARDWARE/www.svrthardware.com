@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="/styles/fonts awesome/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="var(---app-theme)">
+    <meta name="theme-color" content="var(--app-theme)">
     <title>SVRT HARDWARE</title>
 </head>
 <body>
@@ -14,7 +14,10 @@
         <div class="flex">
             <img src="/assets/no-search-2.gif" />
             <h1><i class="fa-solid fa-search"></i> Opps Sorry</h1>
-            <p>Your <i class="fa-solid fa-search"></i> Search Result was not found</p>
+            <p>
+                Your <i class="fa-solid fa-search"></i> Search Result was not found <br>
+                <a href="">Need any help ?</a>
+            </p>
             <button onclick="history.back()"><i class="fa-solid fa-circle-chevron-left"></i> Go Back</button>
 
         </div>
@@ -29,7 +32,7 @@
 
 <style>
     :root{
-        ---app-theme:rgb(3, 184, 255);
+        --app-theme:rgb(3, 184, 255);
     }
     body{
         margin: auto;
@@ -51,7 +54,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(---app-theme);
+        background-color: var(--app-theme);
     }
     .flex{
         width: 90%;
@@ -71,7 +74,14 @@
         margin-top: 0%;
         display: inline;
         color: azure;
+        text-align: center;
+        line-height: 1.5em;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .flex p a{
+        text-decoration: none;
+        color: #ffe6b3;
+
     }
     .flex button{
         font-size: 5.5vw;
@@ -87,7 +97,7 @@
         background-color: #f2f2f2;
     }
     h1{
-        color: rgb(255, 255, 255);
+        color: rgb(32, 17, 0);
         display: inline;
     }
     .landscape{
@@ -95,7 +105,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(---app-theme);
+        background-color: var(--app-theme);
     }
     .landscape img{
         width: 80%;
