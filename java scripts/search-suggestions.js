@@ -1,5 +1,5 @@
 let names = [
-    "Ayla",
+    "ayla",
     "Jake",
     "Sean",
     "Henry",

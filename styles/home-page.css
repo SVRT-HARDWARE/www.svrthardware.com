@@ -362,6 +362,11 @@ height: auto;
     font-family: Arial, sans-serif;
     font-size: 1em;
     box-sizing: border-box;
+    text-transform: lowercase;
+}
+#search-input{
+    text-transform: lowercase;
+    color: #9e3601;
 }
 #searchbar-container button{
     width: 15vw;
@@ -381,6 +386,9 @@ height: auto;
     box-sizing: border-box;
 
 }
+#searchbar-container button :hover{
+    color: #9e3601;
+}
 #searchbar-container> a{
     font-size:8vw;
     padding: 1%;
@@ -389,7 +397,7 @@ height: auto;
 }
 ul {
     list-style: none;
-    font-size: 4vw;
+    font-size: 4.5vw;
     width: 100%;
     height: auto;
     background-color: #ffe6b3;
