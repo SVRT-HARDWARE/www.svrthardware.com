@@ -251,6 +251,7 @@ color: #9e3601;
     .swiper-slide {
     width:100%;
     height:auto;
+    background-color: rgba(0, 0, 0, 0.015);
     
     /* Center slide text vertically */
     display: -webkit-box;
@@ -271,9 +272,10 @@ color: #9e3601;
     display: block;
     width: 100%;
     height: auto;
+    mix-blend-mode: multiply;
     }
     .swiper-pagination{
-        --swiper-pagination-color: #ffe6b3;
-        --swiper-pagination-bullet-inactive-color: #ffffff53;
+        --swiper-pagination-color: #9e3601;
+        --swiper-pagination-bullet-inactive-color: #ffe6b3;
     }
     
