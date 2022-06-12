@@ -11,7 +11,7 @@
 
     <div class="container">
         <div class="flex">
-            <img src="/assets/no-search-2.gif" />
+            <img src="/assets/no-search-1.gif" />
             <h1><i class="fa-solid fa-search"></i> Opps Sorry</h1>
             <p>
                 Your <i class="fa-solid fa-search"></i> Search Result was not found <br>
@@ -29,12 +29,12 @@
 
 <script src="/java scripts/disable-long-press.js"></script>
 <script>
-    document.querySelector('meta[name="theme-color"]').setAttribute('content',  'rgb(3, 184, 255)');
+    document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#fcfcfc');
 </script>
 
 <style>
     :root{
-        --app-theme:rgb(3, 184, 255);
+        --app-theme:#fcfcfc;
     }
     body{
         margin: auto;
@@ -68,21 +68,20 @@
     .flex img{
         width: 100%;
         height: auto;
-        background-color: #000;
-        border-radius: 100%;
+        mix-blend-mode: multiply;
     }
     .flex p{
         font-size: 4vw;
         margin-top: 0%;
         display: inline;
-        color: azure;
+        color: rgb(181, 12, 0);
         text-align: center;
         line-height: 1.5em;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     .flex p a{
         text-decoration: none;
-        color: #ffe6b3;
+        color: #8903aa;
 
     }
     .flex button{
@@ -91,7 +90,7 @@
         outline: none;
         padding: 3%;
         border-radius: 100px;
-        background-color: aquamarine;
+        background-color: #ffe6b3;
         font-weight: bold;
         display: inline;
     }
@@ -99,8 +98,9 @@
         background-color: #f2f2f2;
     }
     h1{
-        color: rgb(32, 17, 0);
+        color: rgb(179, 0, 140);
         display: inline;
+        margin-top: -12%;
     }
     .landscape img{
         width: 80%;
