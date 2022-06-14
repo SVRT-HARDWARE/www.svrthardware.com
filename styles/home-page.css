@@ -298,14 +298,20 @@ overflow-x: auto;
 overflow-x: scroll;
 overflow-y: hidden;
 margin-bottom: 3.5%;
-padding:2.5% 0% 0% 3%;
-border-top: 2.5vw solid #eaeded;
+padding:1% 0% 0% 1.5%;
+background-color: rgba(255, 255, 255, 0.874);
+margin-top: -25%;
+position: relative;
+z-index: 9;
 }
 .swipes img{
-width: 17.5%;
+width: 33%;
 height: auto;
 padding: 1.5vw;
-border-radius: 100px;
+border-radius: 3vw;
+}
+.swipes img:last-child{
+    margin-right: 3%;
 }
 a, a:hover, a:focus, a:active{
 text-decoration: none;
