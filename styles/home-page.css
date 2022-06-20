@@ -108,7 +108,8 @@ background:rgb(255, 255, 255);
 left: 0;
 top: 0;
 position: fixed;
-transition: 0.3s;
+transition:ease-in-out  0.15s;
+transition-property: width;
 z-index: 9;
 overflow-x: hidden;
 }
@@ -182,6 +183,7 @@ overflow-x: hidden;
     z-index: 9;
     background: rgba(0, 0, 0, 0.39);
     transition:fadebackground 10s;
+    transition-property: background;
 }
 #overlay-close{
     width: 13.5%;
