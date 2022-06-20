@@ -312,7 +312,7 @@ white-space: nowrap;
 overflow-x: scroll;
 overflow-y: hidden;
 padding:0% 0% 2.5% 1.5%;
-background: #eaededb0;
+background: linear-gradient(to bottom, #ffffff8a 7%, #eaeded 38%);
 margin-top: -25%;
 position: relative;
 z-index: 8;
@@ -320,8 +320,9 @@ z-index: 8;
 .swipes img{
 width: 33%;
 height: auto;
-padding: 1.5vw;
+padding: 1.2vw;
 border-radius: 3vw;
+background: transparent;
 }
 .swipes img:last-child{
     margin-right: 3%;
