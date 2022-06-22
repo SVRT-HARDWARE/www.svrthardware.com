@@ -43,7 +43,7 @@
             <!-- Menu Here -->
             
             <nav>
-                <div onclick="openNav()" style="display: flex; align-items:center;"><label for="logo"><li class="fa-solid fa-bars"></li> SVRT HARDWARE</label></div>
+                <div style="display: flex; align-items:center;"><li class="fa-solid fa-bars" onclick="openNav()" ></li>&nbsp; <label for="logo">SVRT HARDWARE</label></div>
                 <div><i class="fa-solid fa-cart-shopping"></i> <i class="fa-solid fa-address-card"></i></div>
             </nav>
             <div id="search-header">
@@ -183,6 +183,7 @@
                     <a><i class="material-icons">turned_in</i>&nbsp Privacy Policy</a>
                     <a><i class="material-icons">live_help</i>&nbsp Help Center</a>
                     <a><i class="material-icons">android</i>&nbsp About App</a>
+                    <div id="google_translate_element"></div>
                     
                     <img src="/assets/default-pp.png" id="shareBtn" />
                 </div>
@@ -548,6 +549,17 @@
           }
         }
     </script>
+
+    <!---------------------------------- google translator scripts ------------------------------>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages:'en,hi,te', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+        </script>
+        
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
 
 
 
