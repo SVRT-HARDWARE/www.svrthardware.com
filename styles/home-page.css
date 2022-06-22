@@ -329,6 +329,9 @@ background: transparent;
 .swipes img:last-child{
     margin-right: 3%;
 }
+.swipes img:first-child{
+    padding-left: 0%;
+}
 a, a:hover, a:focus, a:active{
 text-decoration: none;
 color: inherit;
@@ -512,10 +515,12 @@ box-shadow: none !important;
 div#goog-gt-tt{
     display: none;
     visibility: hidden;
+    z-index: -1;
 }
 .VIpgJd-suEOdcskiptranslate{
     display: none;
     visibility:hidden;
+    z-index: -1;
 }
 
 /* -------------------------------- fonts ----------------------- */
