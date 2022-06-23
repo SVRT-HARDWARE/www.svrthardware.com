@@ -16,7 +16,7 @@ a{
 }
 .store-link{
     font-size: 4vw;
-    font-family: roboto,potti-sreeramulu;
+    font-family: roboto,lohiti;
     text-transform: capitalize;
     color: rgb(58, 101, 182);
     padding: 0 0 0 2%;
@@ -24,7 +24,7 @@ a{
     font-weight: bold;
 }
 .title{
-    font-family:roboto,lohithi;
+    font-family:roboto;
     font-size: 4.5vw;
     line-height: 1.5em;
     word-spacing: 0.1vw;
@@ -79,7 +79,7 @@ a{
     outline: none;
     border: none;
     height: 11vw;
-    background-color: #009999;
+    background-color: #ac00e6;
     color: #fff;
     font-family:roboto;
     font-size: 4vw;
@@ -90,7 +90,7 @@ a{
     text-transform: capitalize;
 }
 #share:hover{
-    background-color: #008080;
+    background-color: #9900cc;
 }
 #cart{
     background: none;
@@ -137,6 +137,26 @@ nav img{
     display: inline-block;
     position: relative;
     margin: 0% 0 0 1%;
+}
+nav :last-child{
+    word-spacing: 0.2em;
+}
+nav :last-child :hover{
+    color: #9e3601;
+}
+nav label{
+    font-family: roblox;
+    font-size: 6.8vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+}
+nav li:hover{
+    color: #9e3601;
+}
+nav label:hover{
+    color: #9e3601;
 }
 nav :last-child{
     word-spacing: 0.2em;
@@ -252,7 +272,6 @@ color: #9e3601;
     .swiper-slide {
     width:100%;
     height:auto;
-    background-color: rgba(0, 0, 0, 0.015);
     
     /* Center slide text vertically */
     display: -webkit-box;
@@ -273,11 +292,42 @@ color: #9e3601;
     display: block;
     width: 100%;
     height: auto;
-    mix-blend-mode: multiply;
     }
     .swiper-pagination{
         --swiper-pagination-color: #9e3601;
         --swiper-pagination-bullet-inactive-color: #ffe6b3;
+    }
+
+    /* ---------------------------- product details table --------------------------------- */
+
+    table{
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+        font-family: roboto;
+        font-size: 5vw;
+        line-height: 1.5em;
+        word-spacing: 0.7vw;
+        text-transform: capitalize;
+        border-collapse: collapse;
+        color: #000;
+        font-weight: 400;
+        border-bottom: 0.1px solid rgba(128, 128, 128, 0.527);
+    }
+    table td{
+        padding:1%;
+    }
+    table tr{
+        padding: 2% 0 2% 0;
+    }
+    table td:nth-last-child(even){
+        background: #f5f5f5;
+    }
+    table td:nth-last-child(odd){
+        padding-left: 2.5%;
+    }
+    table tr{
+        border-top: 0.1px solid rgba(128, 128, 128, 0.527);
     }
     
     /* --------------------------- google translator style important ---------------------- */

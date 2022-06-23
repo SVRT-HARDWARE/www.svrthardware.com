@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Example Prouduct</title>
+	<title translate="no">Example Prouduct</title>
     <link href="" rel="canonical" />
 	<!-- Link Swiper's CSS -->
 	<link rel="stylesheet" href="/swiperJS/swiper-bundle.min.css"/> 
@@ -11,7 +11,6 @@
 	<link rel="icon" type="image/png" href="assets/svrt-logo.png" />
     <link rel="stylesheet" href="/styles/fonts awesome/css/all.css" />
     <link rel="stylesheet" href="/styles/products.css">
-    <link rel="preload" href="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" as="script">
 	<meta name="viewport" content= "width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="Author" content="KRISH | SOFTWARE ENGINEER" />
 	<meta name="Keywords" content="SVRT, HARDWARE , HOUSE , HOME , HOLD , ARTICALS , ARTICELS , WHOLESALE , RETAIL , MANUFACTURING , AGENT , AP , TELENGANA , KERALA , TAMILNADU , GOA , SOUTH , INDIA" />
@@ -32,8 +31,8 @@
 <body>
 
 	<!------------------------------------------ nav bar header -------------------------------->
-	<nav>
-		<div><a onclick="history.back()"><i class="fa-solid fa-arrow-left"></i></a><img src="/assets/menu-header.png" onclick="openNav()" /></div>
+	<nav translate="no">
+		<div style="display: flex; align-items:center;"  onclick="history.back()"><li class="fa-solid fa-arrow-left"></li>&nbsp; <label for="logo">SVRT HARDWARE</label></div>
 		<div><i class="fa-solid fa-cart-shopping"></i> <i class="fa-solid fa-address-card"></i></div>
 	</nav>
 	<div id="search-header" translate="no">
@@ -44,7 +43,7 @@
 	<ul class="list" translate="no"></ul>
     <!---------------------------------------------- nav bar END ------------------------------>
 
-	<p class="store-link">example brand</p>
+	<p class="store-link" translate="no">example brand</p>
 	
 	<p class="title">
 		example products and its type by example company example productcode-01
@@ -59,7 +58,7 @@
 		&nbsp; | customers rated
 	</button>
 
-	<!------------------------------- Swiper  Banners ------------------------------>
+	<!------------------------------- Products slider swiper ------------------------------>
 	<div class="swiper mySwiper">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
@@ -76,12 +75,60 @@
 		<div class="swiper-pagination"></div>
 	</div>
 
+	<!----------------------------------------------------------- share & Add To Cart Buttons --------------------------------------->
+
 	<div class="buttons" translate="no">
-		<button id="share"><i class="fa-solid fa-share-nodes"></i> share this product</button>
+		<button id="share"><i class="fa-solid fa-arrow-up-from-bracket"></i> share this product</button>
 		<button id="cart"><i class="fa-solid fa-cart-shopping"></i> add this to cart</button>
 	</div>
 
-	<div style="width:100%; height:100vh;"></div>
+	<!----------------------------------------------------------------- product details ----------------------------------------------->
+
+	<table>
+		<tr>
+			<td>item name</td>
+			<td>double soap dish square</td>
+		</tr>
+		<tr>
+			<td>purpose</td>
+			<td>for bathrooms</td>
+		</tr>
+		<tr>
+			<td>item brand</td>
+			<td translate="no">shiva world</td>
+		</tr>
+		<tr>
+			<td>item code</td>
+			<td>shiva - 03</td>
+		</tr>
+		<tr>
+			<td>item material</td>
+			<td>hard fiber | un-breakable</td>
+		</tr>
+		<tr>
+			<td>packing type</td>
+			<td>2 pcs box packing</td>
+		</tr>
+		<tr>
+			<td>minimum order</td>
+			<td>250 pcs</td>
+		</tr>
+		<tr>
+			<td>list price</td>
+			<td translate="no"> RS -/ ₹160 inclusive GST</td>
+		</tr>
+		<tr>
+			<td>country of origin</td>
+			<td> made in india</td>
+		</tr>
+		<tr>
+			<td>warranty</td>
+			<td> replacement for only manufacturing defeactes</td>
+		</tr>
+	</table>
+
+	<br><br><br><br><br><br><br>
+
 
 </body>
 </html>
@@ -134,6 +181,6 @@
 	}
 	</script>
 	
-	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	
 
