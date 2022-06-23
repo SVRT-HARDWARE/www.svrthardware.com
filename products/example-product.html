@@ -11,6 +11,7 @@
 	<link rel="icon" type="image/png" href="assets/svrt-logo.png" />
     <link rel="stylesheet" href="/styles/fonts awesome/css/all.css" />
     <link rel="stylesheet" href="/styles/products.css">
+    <link rel="preload" href="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" as="script">
 	<meta name="viewport" content= "width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="Author" content="KRISH | SOFTWARE ENGINEER" />
 	<meta name="Keywords" content="SVRT, HARDWARE , HOUSE , HOME , HOLD , ARTICALS , ARTICELS , WHOLESALE , RETAIL , MANUFACTURING , AGENT , AP , TELENGANA , KERALA , TAMILNADU , GOA , SOUTH , INDIA" />
@@ -35,12 +36,12 @@
 		<div><a onclick="history.back()"><i class="fa-solid fa-arrow-left"></i></a><img src="/assets/menu-header.png" onclick="openNav()" /></div>
 		<div><i class="fa-solid fa-cart-shopping"></i> <i class="fa-solid fa-address-card"></i></div>
 	</nav>
-	<div id="search-header">
+	<div id="search-header" translate="no">
 		<form method="post" id="searchbar-container" autocomplete="off" autocorrect="off" spellcheck="false" target="_self" action="/">
 			<a onclick="history.back()"><li class="fa-solid fa-arrow-left"></li></a><input type="text" placeholder="search here" name="username" id="search-input" required /><button id="search" type="submit" value="Login"><i class="fa-solid fa-magnifying-glass"></i></button>
 		</form>
 	</div>
-	<ul class="list"></ul>
+	<ul class="list" translate="no"></ul>
     <!---------------------------------------------- nav bar END ------------------------------>
 
 	<p class="store-link">example brand</p>
@@ -48,7 +49,7 @@
 	<p class="title">
 		example products and its type by example company example productcode-01
 	</p>
-	<button class="rating">
+	<button class="rating" translate="no">
 		<p>3.5</p>
 		<i class="fa-solid fa-star"></i>
 		<i class="fa-solid fa-star"></i>
@@ -75,7 +76,7 @@
 		<div class="swiper-pagination"></div>
 	</div>
 
-	<div class="buttons">
+	<div class="buttons" translate="no">
 		<button id="share"><i class="fa-solid fa-share-nodes"></i> share this product</button>
 		<button id="cart"><i class="fa-solid fa-cart-shopping"></i> add this to cart</button>
 	</div>
@@ -124,4 +125,15 @@
 	},
   });
 </script>
+
+<!-- ------------------------------------------- google translater --------------------------------------------->
+
+<script type="text/javascript">
+	function googleTranslateElementInit() {
+	  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages:'en,hi,te', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+	}
+	</script>
+	
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+	
 

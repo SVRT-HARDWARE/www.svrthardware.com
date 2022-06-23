@@ -1,4 +1,5 @@
 body{
+    top: 0% !important;
     margin: auto;
     user-select: none;
     -moz-user-select: none;
@@ -9,21 +10,21 @@ html::-webkit-scrollbar{
     scroll-behavior: smooth;
     scrollbar-width: none;
     scrollbar-color: transparent;
-    scrollbar-base-color: transparent;
 }
 a{
     -webkit-tap-highlight-color: transparent;
 }
 .store-link{
     font-size: 4vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: roboto,potti-sreeramulu;
     text-transform: capitalize;
     color: rgb(58, 101, 182);
     padding: 0 0 0 2%;
     margin:2% 0 0 0;
+    font-weight: bold;
 }
 .title{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:roboto,lohithi;
     font-size: 4.5vw;
     line-height: 1.5em;
     word-spacing: 0.1vw;
@@ -51,7 +52,7 @@ a{
     margin-top: -3%;
     background: none;
     outline: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: roboto;
 }
 .rating p{
     color: #fff;
@@ -80,7 +81,7 @@ a{
     height: 11vw;
     background-color: #009999;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:roboto;
     font-size: 4vw;
     padding: 5%;
     border-radius: 2vw;
@@ -98,7 +99,7 @@ a{
     height: 11vw;
     background-color: #339966;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:roboto;
     font-size: 4vw;
     padding: 5%;
     border-radius: 2vw;
@@ -279,3 +280,89 @@ color: #9e3601;
         --swiper-pagination-bullet-inactive-color: #ffe6b3;
     }
     
+    /* --------------------------- google translator style important ---------------------- */
+
+.goog-te-banner-frame.skiptranslate, .goog-te-gadget-simple img {
+    display: none !important;
+    width:0%;
+    height:0%;
+    visibility:hidden;
+    pointer-events: none;
+    }
+    .goog-tooltip{
+    display: none !important;
+    }
+    .goog-tooltip:hover {
+    display: none !important;
+    }
+    .goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    }
+    div#goog-gt-tt{
+        display: none !important;
+        visibility: hidden !important;
+        z-index: -10 !important;
+    }
+    .VIpgJd-suEOdc skiptranslate{
+        display: none !important;
+        visibility:hidden !important;
+        z-index: -10 !important;
+    }
+    .goog-te-gadget-simple{
+        border: none !important;
+        outline: none !important;
+    }
+    .goog-te-gadget-simple span{
+        border: none !important;
+        outline: none !important;
+    }
+    
+/* -------------------------------- fonts ----------------------- */
+
+@font-face{
+    font-family: "roboto";
+    src: url(/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+
+}
+@font-face{
+    font-family: "monoto";
+    src: url(/fonts/Monoton/Monoton-Regular.ttf) format('truetype');
+
+}
+@font-face{
+    font-family: "roblox";
+    src: url(/fonts/roblox/Roblox\ Font\ Regular.ttf) format('truetype');
+
+}
+@font-face{
+    font-family: "goldman";
+    src: url(/fonts/Goldman/Goldman-Regular.ttf) format('truetype');
+
+}
+@font-face{
+    font-family: "faster";
+    src: url(/fonts/Faster_One/FasterOne-Regular.ttf) format('truetype');
+
+}
+@font-face{
+    font-family: "chathura";
+    src: url(/fonts/telugu/chathura-bold/Chathura.ttf) format('truetype');
+}
+@font-face{
+    font-family: "lohiti";
+    src: url(/fonts/telugu/lohit-telugu-regular/Lohit.ttf) format('truetype');
+
+}
+@font-face{
+    font-family: "nandakam";
+    src: url(/fonts/telugu/nandakam-regular/Nandakam.otf) format('opentype');
+
+}
+@font-face{
+    font-family: "potti-sreeramulu";
+    src: url(/fonts/telugu/potti-sreeramulu-regular/Potti-Sreeramulu.otf) format('opentype');
+    font-size: 7vw;
+
+}
