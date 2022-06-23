@@ -516,12 +516,11 @@ box-shadow: none !important;
 }
 div#goog-gt-tt{
     display: none !important;
-    visibility: hidden !important;
     z-index: -10 !important;
 }
 .VIpgJd-suEOdc skiptranslate{
-    display: none !important;
-    visibility:hidden !important;
+    /* display: none !important;
+    visibility:hidden !important; */
     z-index: -10 !important;
 }
 .goog-te-gadget-simple{
