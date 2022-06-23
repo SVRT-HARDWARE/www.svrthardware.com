@@ -513,14 +513,22 @@ border: none !important;
 box-shadow: none !important;
 }
 div#goog-gt-tt{
-    display: none;
-    visibility: hidden;
-    z-index: -1;
+    display: none !important;
+    visibility: hidden !important;
+    z-index: -10 !important;
 }
-.VIpgJd-suEOdcskiptranslate{
-    display: none;
-    visibility:hidden;
-    z-index: -1;
+.VIpgJd-suEOdc skiptranslate{
+    display: none !important;
+    visibility:hidden !important;
+    z-index: -10 !important;
+}
+.goog-te-gadget-simple{
+    border: none !important;
+    outline: none !important;
+}
+.goog-te-gadget-simple span{
+    border: none !important;
+    outline: none !important;
 }
 
 /* -------------------------------- fonts ----------------------- */
