@@ -551,31 +551,13 @@
 
     <!---------------------------------- google translator scripts ------------------------------>
 
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages:'en,hi,te', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-        }
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages:'en,hi,te', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            }
         </script>
         
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        <script src="/java scripts/translator-cookies.js"></script>
-        <script type='text/javascript'>
-
-            (function()
-            {
-              if( window.localStorage )
-              {
-                if( !localStorage.getItem('firstLoad') )
-                {
-                  localStorage['firstLoad'] = true;
-                  window.location.reload();
-                }  
-                else
-                  localStorage.removeItem('firstLoad');
-              }
-            })();
-            
-        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
 
