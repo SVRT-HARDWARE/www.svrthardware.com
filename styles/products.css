@@ -181,9 +181,8 @@ nav :last-child :hover{
     margin-top: 2%;
 }
 #ratings .customer{
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
     padding: 2% 0 2% 0;
+    border-top: 1px solid #a2a5a5;
 }
 #ratings .customer p{
     font-family: roboto;
@@ -195,8 +194,10 @@ nav :last-child :hover{
     padding-left: 1%;
 }
 #ratings .customer p i{
-    color: #339966;
-    font-size: 12vw;
+    font-size: 13vw;
+    background: linear-gradient(to top, #000099 0%, #0066ff 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 #ratings .customer p a{
     line-height: 1.5em;
@@ -208,10 +209,16 @@ nav :last-child :hover{
     color: orange;
     font-size: 4vw;
 }
+#ratings .customer p a b:first-child{
+    font-family: roboto,sans-serif;
+    font-weight: bolder;
+    background: linear-gradient(to right, #f32170,#ff6b08, #cf23cf, #4488ee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
 #ratings .customer p a b:last-child{
     color: rgb(138, 138, 138);
     font-weight: 550;
-    letter-spacing: 0.5vw;
     padding-left: 1%;
 }
 #ratings #reviews{
@@ -224,6 +231,7 @@ nav :last-child :hover{
     font-size: 4.8vw;
     margin: auto;
     overflow: hidden;
+    color: rgba(0, 0, 0, 0.788);
 }
 
 /* -------------------------search header style--------------------------- */
