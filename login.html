@@ -45,7 +45,7 @@
 
         <div class="container">
             <div class="login-container">
-                <form target="self" method="post" id="login-form">
+                <form action="" method="post" id="login-form">
                         <img src="https://w7.pngwing.com/pngs/713/762/png-transparent-computer-icons-button-login-image-file-formats-logo-monochrome.png" />
                       <label for="uname"><b><i class="fa-solid fa-phone"></i> Mobile Number</b></label>
                       <input type="number" placeholder="Enter Registered mobile number" name="username" id="username-field" maxlength="10" required>
@@ -150,7 +150,27 @@
     }
    </style>
 
+    <script>
+        const loginForm = document.getElementById("login-form");
+        const loginButton = document.getElementById("login-form-submit");
+        const loginErrorMsg = document.getElementById("login-error-msg");
 
+        loginButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            const username = loginForm.username.value;
+            const password = loginForm.password.value;
+
+            if (username === "9642645777" && password === "1991") {
+                location.href="/index.html";
+                return false;
+            }
+            else{
+                location.reload();
+            }
+        })
+    </script>
+
+    <!-------------------------------------------- desktop version redirect ------------------------------------------>
     <script>
         var usrAgent = navigator.userAgent;
                 function detectMobile() 
