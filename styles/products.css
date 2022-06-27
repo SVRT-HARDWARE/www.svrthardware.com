@@ -21,6 +21,9 @@ a{
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;
 }
+:root{
+    --theme-color:#ffe6b3;
+}
 .store-link{
     font-size: 4vw;
     font-family: roboto,lohiti;
@@ -172,6 +175,38 @@ nav :last-child{
 nav :last-child :hover{
     color: #9e3601;
 }
+/* -------------------------rate product button----------------------------- */
+
+#rate-product{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -5%;
+}
+#rate-product p{
+    width: 60%;
+    font-family: roboto;
+    line-height: 1.5em;
+    font-size: 5vw;
+    font-weight: bolder;
+    padding: 2%;
+    text-transform: capitalize;
+}
+#rate-product button{
+    font-size: 4vw;
+    font-family: roboto;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 3%;
+    margin-right: 2%;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 1.5vw;
+    background: #f3f3f3;
+    outline: none;
+}
 
 /* -------------------------customer ratings------------------------------- */
 #ratings-hover{
@@ -186,11 +221,12 @@ nav :last-child :hover{
 }
 #ratings-hover div:first-child{
     display: flex;
+    height: 15vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: roboto;
-    border-right: 1px dashed gray;
+    border-right: 1.5px dashed gray;
 }
 #ratings-hover div:first-child i{
     font-size: 5vw;
@@ -452,7 +488,16 @@ color: #9e3601;
     table tr{
         border-top: 0.1px solid rgba(128, 128, 128, 0.527);
     }
+
+    /* ----------------------------screen orientation-------------------------------------- */
     
+    @media only screen and (orientation:landscape){
+        body{
+            visibility: hidden;
+            background: var(--theme-color);
+        }
+    }
+
     /* --------------------------- google translator style important ---------------------- */
 
 .goog-te-banner-frame.skiptranslate, .goog-te-gadget-simple img {
