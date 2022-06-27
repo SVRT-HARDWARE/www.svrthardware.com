@@ -30,6 +30,10 @@
 </head>
 <body>
 
+	<div class="loader-container">
+		<div class="loader"></div>
+	</div>
+
 	<!------------------------------------------ nav bar header -------------------------------->
 	<nav translate="no">
 		<div style="display: flex; align-items:center;"  onclick="history.back()"><li class="fa-solid fa-arrow-left"></li>&nbsp; <label for="logo">SVRT HARDWARE</label></div>
@@ -216,6 +220,12 @@
 
 	<br><br><br><br>
 
+	<script>
+		$(window).on("load",function(){
+			$(".loader-container").fadeOut(1500);
+		});
+	</script>
+
 </body>
 </html>
 
@@ -258,6 +268,7 @@
 	},
   });
 </script>
+
 
 <!-- ------------------------------------------- google translater --------------------------------------------->
 
