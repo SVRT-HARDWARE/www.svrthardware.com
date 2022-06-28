@@ -257,9 +257,7 @@ z-index:1;
 .items img{
 width: 100%;
 height: auto;
-position: relative;
 border-radius: 4vw;
-z-index: 1;
 }
 .items a p{
     display: -webkit-box;
@@ -292,6 +290,8 @@ z-index: 1;
     position: relative;
     align-content: center;
     justify-content: center;
+    align-self: center;
+    justify-self: center;
 }
 span{
     z-index: 1;
