@@ -495,6 +495,11 @@ color: #9e3601;
         body{
             visibility: hidden;
             background: var(--theme-color);
+            overflow: hidden;
+            background-image: url('/landscape.png');
+            background-repeat: no-repeat;
+            background-size: 55%;
+            background-position: center;
         }
     }
 

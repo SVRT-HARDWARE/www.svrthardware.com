@@ -345,13 +345,15 @@ color: inherit;
 .landscape{
 width:100%;
 height: 100vh;
+position: relative;
 display: flex;
 align-items: center;
 justify-content: center;
 }
 .landscape img{
-width: 90%;
+width: 55%;
 height: auto;
+position: relative;
 }
 
 /* -------------------------search header style--------------------------- */
@@ -451,14 +453,14 @@ color: #9e3601;
 
 /* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
 @media only screen and (orientation:landscape) {
-#land { display:block; }
+#land { visibility: visible; }
 #port { display:none; }
 body{background-color: rgb(255,230,179); overflow: hidden;}
 }
 
 /* (B) CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
 @media only screen and (orientation:portrait) {
-#land { display:none; }
+#land { visibility: hidden; }
 #port { display:block; }
 }
 

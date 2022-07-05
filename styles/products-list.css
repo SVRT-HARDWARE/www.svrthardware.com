@@ -124,5 +124,11 @@ input::placeholder{
     body{
         visibility: hidden;
         overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('/landscape.png');
+        background-position: center;
+        background-size: 55%;
+        background-repeat: no-repeat;
     }
 }
