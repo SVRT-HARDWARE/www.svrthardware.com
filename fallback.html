@@ -12,10 +12,11 @@
 	<link href="" rel="canonical" />
 	<!-- Link Swiper's CSS -->
 	<link rel="stylesheet" href="/styles/fonts awesome/css/all.css"/> 
+  <link rel="stylesheet" href="/styles/page-loader.css">
 	<meta charset="UTF-8">
 	<link rel="icon" type="image/png" href="assets/svrt-logo.png" />
 	<meta name="viewport" content= "width=device-width, initial-scale=1 user-scalable=no" />
-	<meta name="theme-color" content="#ffeded"/>
+	<meta name="theme-color" content="#fff"/>
 	
  </head>
  <body>
@@ -27398,7 +27399,9 @@
 
 		</div>
 	
-	
+    <div class="loader-container"><div class="loader"></div></div>
+	  <script src="/java scripts/page loader/page-loader-jquary.min.js"></script>
+    <script src="/java scripts/page loader/pageloader-timeout.js"></script>
 
 
  </body>
@@ -27421,10 +27424,13 @@
  </script>
 
 <style type="text/css">
+  :root{
+    --theme-color:#fff;
+  }
 	body{
 		margin:auto;
 		overflow-x:hidden;
-		background-color:#ffeded;
+		background-color:#fff;
     	color:black;
 		background-attachment:fixed;
 		display: flex;
