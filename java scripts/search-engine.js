@@ -3,20 +3,20 @@ const searchButton = document.getElementById("search");
 
 searchButton.addEventListener("click", (e) => {
     e.preventDefault();
-    const username = searchForm.username.value;
+    const searchinput = searchForm.searchinput.value;
 
-    if (username === "ayla")
+    if (searchinput === "ayla")
     {
         location.href="/products/example-product.html";
         return false;
     }
 
-    else if (username === "amy")
+    else if (searchinput === "amy")
     {
         location.href="/download-app.html";
         return false;
     }
-    else if (username === "fuck"){
+    else if (searchinput === "fuck"){
         location.href="/products/example-product.html";
         return false;
     }
