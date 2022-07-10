@@ -372,9 +372,16 @@
     }
     
     .mySwiper2 .swiper-slide{
-        background-color:#fff;
+        background-color:#f9f9f9;
         width:100%;
         height:auto;
+        aspect-ratio: 4/3;
+        overflow: hidden;
+    }
+    .mySwiper2 .swiper-slide img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     .mySwiper {
@@ -390,12 +397,16 @@
      position:relative;
      overflow-x:hidden;
      padding:0 2% 0 2%;
+     align-items: center;
+     justify-content: center;
+     justify-items: center;
+     background: #fff;
     }
     .fade-thumb .swiper-slide img{
     width:100%;
-      height:auto;
-      border-radius:2vw;
-      position:relative;
+    height:auto;
+    border-radius:2vw;
+    position:relative;
     }
     .swiper-slide img {
       width: 100%;
