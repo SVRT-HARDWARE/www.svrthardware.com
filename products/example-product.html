@@ -11,7 +11,8 @@
 	<script src="/java scripts/page loader/pageloader-timeout.js"></script>
 	<link rel="stylesheet" href="/styles/page-loader.css">
 	<meta charset="UTF-8">
-	<link rel="icon" type="image/png" href="assets/svrt-logo.png" />
+	<link rel="icon" type="image/png" href="/assets/svrt-favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/assets/svrt-favicon.png" />
     <link rel="stylesheet" href="/styles/fonts awesome/css/all.css" />
     <link rel="stylesheet" href="/styles/products.css">
 	<meta name="viewport" content= "width=device-width, initial-scale=1, user-scalable=no" />
@@ -49,20 +50,24 @@
 	<ul class="list" translate="no"></ul>
     <!---------------------------------------------- nav bar END ------------------------------>
 
-	<p class="store-link" translate="no">example brand</p>
+	<p class="store-link" translate="no"><i class="fa-solid fa-store"></i> example brand</p>
 	
 	<p class="title">
 		example products and its type by example company example productcode-01
 	</p>
-	<a href="#rate-product" class="rating" translate="no">
-		<p>3.5</p>
-		<i class="fa-solid fa-star"></i>
-		<i class="fa-solid fa-star"></i>
-		<i class="fa-solid fa-star"></i>
-		<i class="fa-solid fa-star-half-stroke"></i>
-		<i class="fa-regular fa-star"></i>
-		&nbsp; | customers rated
-	</a>
+	
+	<div class="rating-container">
+		<a href="#rate-product" class="rating" translate="no">
+			<p>3.5</p>
+			<i class="fa-solid fa-star"></i>
+			<i class="fa-solid fa-star"></i>
+			<i class="fa-solid fa-star"></i>
+			<i class="fa-solid fa-star-half-stroke"></i>
+			<i class="fa-regular fa-star"></i>
+			&nbsp; | customers rated
+		</a>
+		<button><a href="#price">₹ 160</a></button>
+	</div>
 
 	<!------------------------------- Products slider swiper ------------------------------>
 	<div class="swiper mySwiper">
@@ -84,8 +89,8 @@
 	<!----------------------------------------------------------- share & Add To Cart Buttons --------------------------------------->
 
 	<div class="buttons" translate="no">
-		<button id="share"><i class="fa-solid fa-arrow-up-from-bracket"></i> share this product</button>
-		<button id="cart"><i class="fa-solid fa-cart-shopping"></i> add this to cart</button>
+		<button id="share"><i class="fa-solid fa-square-share-nodes"></i> share this product</button>
+		<button id="cart"><i class="fa-solid fa-cart-arrow-down"></i> add this to cart</button>
 	</div>
 
 	<!----------------------------------------------------------------- product details ----------------------------------------------->
@@ -115,7 +120,7 @@
 			<td>packing type</td>
 			<td>2 pcs box packing</td>
 		</tr>
-		<tr>
+		<tr id="price">
 			<td>minimum order</td>
 			<td>250 pcs</td>
 		</tr>
