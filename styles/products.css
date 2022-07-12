@@ -522,7 +522,7 @@ color: #9e3601;
     
     @media only screen and (orientation:landscape){
         body{
-            visibility: hidden;
+            display: none;
             background: var(--theme-color);
             overflow: hidden;
             background-image: url('/landscape.png');

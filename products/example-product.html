@@ -76,7 +76,7 @@
 				<a href="/assets/images/disp.jpg"><img src="/assets/images/samples/Slide1.JPG"></a>
 			</div>
 			<div class="swiper-slide"><img src="/assets/images/samples/Slide2.JPG"></div>
-			<div class="swiper-slide"><img src="/assets/images//samples/Slide3.JPG"></div>
+			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="/assets/images//samples/Slide3.JPG"></div></div>
 			<div class="swiper-slide"><img src="/assets/images//samples/Slide4.JPG"></div>
 			<div class="swiper-slide"><img src="/assets/images//samples/Slide5.JPG"></div>
 			<div class="swiper-slide"><img src="/assets/images//samples/Slide6.JPG"></div>
@@ -253,6 +253,7 @@
 <!-- Initialize Swiper -->
 <script>
   var swiper = new Swiper(".mySwiper", {
+	zoom:true,
 	spaceBetween: 30,
 	loop:false,
 	centeredSlides: true,
