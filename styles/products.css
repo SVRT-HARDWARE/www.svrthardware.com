@@ -481,6 +481,9 @@ color: #9e3601;
     object-position: center;
     mix-blend-mode: multiply;
     }
+    .swiper-zoom-container{
+       mix-blend-mode: multiply;
+    }
     .swiper-pagination{
         --swiper-pagination-color: #9e3601;
         --swiper-pagination-bullet-inactive-color: #ffe6b3;
