@@ -458,7 +458,6 @@ color: #9e3601;
     height:auto;
     aspect-ratio: 1;
     overflow: hidden;
-    background: #f9f9f9;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -487,6 +486,8 @@ color: #9e3601;
     .swiper-pagination{
         --swiper-pagination-color: #9e3601;
         --swiper-pagination-bullet-inactive-color: #ffe6b3;
+        font-family: roboto;
+        color: #9e3601;
     }
 
     /* ---------------------------- product details table --------------------------------- */
