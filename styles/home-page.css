@@ -2,7 +2,9 @@ body{
     top: 0% !important;
     margin:auto;
     overflow-x:hidden;
-    background-color:#eaeded;
+    background:var(--app-background);
+    background-attachment: fixed;
+    background-size: contain;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -14,6 +16,12 @@ body::-webkit-scrollbar{
     scrollbar-color:transparent;
     scrollbar-width: none;
     visibility: hidden;
+}
+*::-webkit-scrollbar{
+    display: none;
+    scrollbar-color:transparent;
+    scrollbar-width: none;
+    visibility: none;
 }
 .swipes::-webkit-scrollbar{
     display: none;
@@ -47,6 +55,7 @@ html::-webkit-scrollbar{
 
 :root{
     --theme-color:#ffe6b3;
+    --app-background:#eaeded;
 }
 /*---------------- nav bar style ---------*/
 nav{
@@ -228,7 +237,7 @@ padding-top: 2vw;
 display: none;
 }
 .view{
-    width: 100%;
+    width: 98%;
     height: auto;
     margin: auto;
     position: relative;
@@ -237,12 +246,12 @@ display: none;
     align-items: center;
 }
 .container{
-width:92%;
+width:92.5%;
 height:auto;
 position: relative;
-padding: 2%;
-margin: 0 0 3% 0;
-border-radius: 2vw;
+padding: 1.5%;
+margin: 0 0 3.5% 0;
+border-radius: 5vw;
 background: #ffffff;
 z-index:1;
 }
@@ -295,6 +304,11 @@ border-radius: 4vw;
     align-self: center;
     justify-self: center;
 }
+.fadeswipecontainer{
+    background: #ffffff;
+    padding: 2%;
+    margin-top: 2%;
+}
 span{
     z-index: 1;
 }
@@ -321,7 +335,7 @@ white-space: nowrap;
 overflow-x: scroll;
 overflow-y: hidden;
 padding:0% 0% 2.5% 1.5%;
-background: linear-gradient(to bottom, #ffffff00 5%, #eaeded 48%);
+background: linear-gradient(to bottom, #ffffff00 5%, var(--app-background) 48%);
 margin-top: -25%;
 position: relative;
 z-index: 8;
