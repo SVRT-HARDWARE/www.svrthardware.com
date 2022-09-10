@@ -27,10 +27,6 @@ body::-webkit-scrollbar{
     display: none;
     scrollbar-color: transparent;
 }
-.port::-webkit-scrollbar{
-    display: none;
-    scrollbar-color: transparent;
-}
 html{
     -ms-overflow-style:none;
     scrollbar-width:0;
