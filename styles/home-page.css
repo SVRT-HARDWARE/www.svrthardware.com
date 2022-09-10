@@ -476,6 +476,7 @@ color: #9e3601;
 #port::-webkit-scrollbar{
     display: none;
     scrollbar-color:transparent;
+    scrollbar-width: none;
     visibility: hidden;
 }
 
