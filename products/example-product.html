@@ -14,6 +14,8 @@
 	<link rel="icon" type="image/png" href="/assets/svrt-favicon.png" />
     <link rel="shortcut icon" type="image/png" href="/assets/svrt-favicon.png" />
     <link rel="stylesheet" href="/styles/fonts awesome/css/all.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="/styles/nav-bar.css">
     <link rel="stylesheet" href="/styles/products.css">
 	<meta name="viewport" content= "width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="Author" content="KRISH | SOFTWARE ENGINEER" />
@@ -38,16 +40,8 @@
 	</div>
 
 	<!------------------------------------------ nav bar header -------------------------------->
-	<nav translate="no">
-		<div style="display: flex; align-items:center;"  onclick="history.back()"><li class="fa-solid fa-arrow-left"></li>&nbsp; <label for="logo">SVRT HARDWARE</label></div>
-		<div><i class="fa-solid fa-cart-shopping"></i> <i class="fa-solid fa-address-card"></i></div>
-	</nav>
-	<div id="search-header" translate="no">
-		<form method="post" id="searchbar-container" autocomplete="off" autocorrect="off" spellcheck="false" target="_self" action="/">
-			<a onclick="history.back()"><li class="fa-solid fa-arrow-left"></li></a><input type="text" placeholder="search here" name="searchinput" id="search-input" required /><button id="search" type="submit" value="Login"><i class="fa-solid fa-magnifying-glass"></i></button>
-		</form>
-	</div>
-	<ul class="list" translate="no"></ul>
+	<div class="navigation"></div>
+	<script src="/java scripts/nav-bar.js"></script>
     <!---------------------------------------------- nav bar END ------------------------------>
 
 	<p class="store-link" translate="no"><i class="fa-solid fa-store"></i> example brand</p>
@@ -227,27 +221,12 @@
 
 	<br><br><br><br>
 
-	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."footer.html"); ?>
-
 </body>
 </html>
 
 
 
-<script src="/java scripts/search-suggestions.js"></script>
-<script src="/java scripts/search-engine.js"></script>
-<script>
-	// When the user scrolls down 20px from the top of the document, slide down the navbar
-	window.onscroll = function() {scrollFunction()};
-	
-	function scrollFunction() {
-	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		document.getElementById("search-header").style.top = "0";
-	  } else {
-		document.getElementById("search-header").style.top = "-50%";
-	  }
-	}
-</script>
+
 
 <!-- Swiper JS -->
 <script src="/swiperJS/swiper-bundle.min.js"></script>
@@ -283,7 +262,5 @@
 	  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages:'en,hi,te', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 	}
 </script>
-	
-	<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-	
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
