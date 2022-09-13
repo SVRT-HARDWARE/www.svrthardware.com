@@ -16,6 +16,13 @@ nav{
     border-bottom: 1vw solid #d89000;
     background-color: rgb(255,230,179);
 }
+.navigation{
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0%;
+    z-index: 9;
+}
 nav img{
     width:62%;
     height: auto;
@@ -257,7 +264,6 @@ ul {
     position: fixed;
     z-index: 9;
     top:11vw;
-    border-top:1vw solid #d89000;
     font-family: arial , sans-serif;
 }
 .list {
