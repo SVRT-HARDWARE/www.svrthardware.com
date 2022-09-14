@@ -1,3 +1,4 @@
+// top nav-bar script
 const nav = document.querySelector('.navigation')
 fetch('/nav-bar.html')
 .then(res=>res.text())
@@ -7,7 +8,6 @@ fetch('/nav-bar.html')
     const doc = parser.parseFromString(data, 'text/html')
     eval(doc.querySelector('script').textContent)
 })
-
 
     // When the user scrolls down 20px from the top of the document, slide down the navbar
     window.onscroll = function() {scrollFunction()};
