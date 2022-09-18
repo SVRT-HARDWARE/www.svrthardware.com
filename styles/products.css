@@ -6,6 +6,7 @@ body{
     -webkit-user-select: none;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background: var(--app-background);
 }
 body::-webkit-scrollbar{
     scroll-behavior: smooth;
@@ -22,7 +23,8 @@ a{
     text-decoration: none;
 }
 :root{
-    --theme-color:#ffe6b3;
+        --theme-color:#ffe6b3;
+        --app-background:#eff1fe;
 }
 .store-link{
     font-size: 4vw;
@@ -120,6 +122,11 @@ a{
 #cart:hover{
     background-color: #2d8659;
 }
+.customer{
+    width: 97%;
+    height: auto;
+    margin: auto;
+}
 .rating-container{
     width: 100%;
     height: auto;
@@ -199,6 +206,16 @@ nav :last-child{
 }
 nav :last-child :hover{
     color: #9e3601;
+}
+/* -------------------------  ratings-display  -------------------------------- */
+
+.ratings-display{
+    width: 90%;
+    padding: 2%;
+    margin: 2% auto 2% auto;
+    background: #ffffff;
+    border: 0.1px solid rgba(0, 0, 0, 0.226);
+    border-radius: 2vw;
 }
 /* -------------------------rate product button----------------------------- */
 
@@ -292,11 +309,12 @@ nav :last-child :hover{
     margin-top: 2%;
 }
 #ratings .customer{
-    padding: 2% 0 2% 0;
-    border-top: 1px solid #a2a5a5;
-}
-#ratings .customer:last-child{
-    border-bottom: 1px solid #a2a5a5;
+    width: 90%;
+    padding: 3%;
+    margin: 2% auto 2% auto;
+    background: #ffffff;
+    border: 0.1px solid rgba(0, 0, 0, 0.226);
+    border-radius: 2vw;
 }
 #ratings .customer p{
     font-family: roboto;
@@ -344,7 +362,7 @@ nav :last-child :hover{
     padding: 1.5% 1% 1% 1%;
     text-transform: capitalize;
     line-height: 1.5em;
-    font-size: 4.8vw;
+    font-size: 3.5vw;
     margin: auto;
     overflow: hidden;
     color: rgba(0, 0, 0, 0.788);
@@ -447,11 +465,15 @@ color: #9e3601;
 
 /*-------------------SWIPER STYLE---------------*/
 .swiper {
-    width: 100%;
+    width: 90%;
     height: auto;
-    margin-top: 3%;
+    padding: 3%;
+    margin: 4% auto 5% auto;
     z-index: 1;
     position:relative;
+    background: #ffffff;
+    border: 0.1px solid rgba(0, 0, 0, 0.226);
+    border-radius: 2vw;
     }
     .swiper-slide {
     width:100%;
@@ -493,24 +515,30 @@ color: #9e3601;
     /* ---------------------------- product details table --------------------------------- */
 
     table{
-        width: 100%;
+        width: 97%;
         height: auto;
-        margin-top: 5%;
+        position: relative;
+        align-self: center;
+        margin: 5% auto auto auto;
         font-family: roboto;
-        font-size: 5vw;
+        font-size: 3.5vw;
         line-height: 1.5em;
         word-spacing: 0.7vw;
         text-transform: capitalize;
-        border-collapse: collapse;
         color: #000;
+        background: #ffffff;
+        padding: 2%;
         font-weight: 400;
-        border-bottom: 0.1px solid rgba(128, 128, 128, 0.527);
+        border: 0.1px solid rgba(128, 128, 128, 0.527);
+        border-radius: 4vw;
     }
     table td{
         padding:1%;
     }
     table tr{
         padding: 2% 0 2% 0;
+        border-top: 0.1px solid rgba(128, 128, 128, 0.527);
+    
     }
     table td:nth-last-child(even){
         background: #f5f5f5;
@@ -518,10 +546,6 @@ color: #9e3601;
     table td:nth-last-child(odd){
         padding-left: 2.5%;
     }
-    table tr{
-        border-top: 0.1px solid rgba(128, 128, 128, 0.527);
-    }
-
     /* ----------------------------screen orientation-------------------------------------- */
     
     @media only screen and (orientation:landscape){

@@ -297,7 +297,7 @@ footer img{
     width: 90%;
     height: auto;
     border-radius: 5vw;
-    border: 2px double #421600;
+    border: 2px solid #421600;
     position: relative;
     margin: 6% 0 6% 0;
 }
